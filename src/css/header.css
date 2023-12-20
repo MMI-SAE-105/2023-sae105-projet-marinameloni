@@ -1,11 +1,21 @@
-.header {
-background-color: #66AECE;
-color: white;
-padding: 10px;
-text-align: center;
-font-size: 35px;
+@font-face {
+    font-family: "StoriaLettering";
+    src:
+        local("StoriaLettering"),
+        url("/public/fonts/storia-lettering.otf") format("otf"),
 }
+
 .h1_header {
-font src="/fonts/storia-lettering.otf";
-font-size: 35px;
+    font-family: 'StoriaLettering';
+    font-size: 35px;
+}
+
+.header {
+    background-color: #66AECE;
+    color: white;
+    font-family: 'StoriaLettering';
+    padding: 10px;
+    text-align: center;
+    font-size: 35px;
+    width: 100%;
 }
