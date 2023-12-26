@@ -6,6 +6,7 @@
   font-family: 'Baloo 2', cursive;
   text-align: center;
   font-size: 35px;
-    flex-shrink: 0;
-  position: sticky
+  flex-shrink: 0;
+  bottom: 0;
+  
 }
