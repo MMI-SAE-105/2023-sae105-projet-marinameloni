@@ -26,3 +26,11 @@
     font-weight: 400;
     line-height: normal;
 }
+
+.photohome {
+  width: 376px;
+  height: 470px;
+  flex-shrink: 0;
+  background:lightgray 50% / cover no-repeat;
+  
+}
