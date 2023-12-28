@@ -16,11 +16,36 @@
     font-family: 'StoriaLettering';
     padding: 10px;
     text-align: center;
-    justify-content: center;
+    justify-content: space-around;
+    flex-shrink: 0;
     font-size: 35px;
     width: 100%;
     position: sticky;    
     top: 0;
     z-index: 1;
+    justify-items: center;
      
+}
+
+.logoheader {
+    width: 39px;
+    height: 39px;
+    flex-shrink: 0;
+    margin-left: 0px;
+    margin-top: 0px;
+    display: flex;
+
+}
+.headerlogoconteneur {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    align-items: center;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    
 }
