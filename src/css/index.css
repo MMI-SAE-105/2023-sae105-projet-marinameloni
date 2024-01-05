@@ -102,3 +102,10 @@ stroke-width: 1px;
 border-radius: 10px;
 background: rgba(102, 174, 206, 0.66);
 }
+
+.photocalcifer {
+  width: 48.961px;
+  height: 54.026px;
+  flex-shrink: 0;
+  float: right;
+}
