@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../src/css/index.css">
     <link rel="stylesheet" href="../src/css/header.css">
     <link rel="stylesheet" href="../src/css/footer.css">
+    <script src="https://unpkg.com/alpinejs" defer></script>
     <style>
         body {
             margin: 0px;
@@ -18,9 +19,36 @@
 <body>
     <header class="header">
         <div class="headerlogoconteneur">
-            <img src="../public/img/logo.svg" alt="Logo" class="logoheader">
-            <img src="../public/img/header text.svg" alt="Header text">
-            <img src="../public/img/menu.svg" alt="Menu">
+            <img src="../public/img/logo.svg" alt="Logo" class="logoheader"> </div>
+            <div class="headertextconteneur">
+            <img src="../public/img/header text.svg" alt="Header text" class="textheader"> </div>
+            <div class="headermenuconteneur">
+            <img src="../public/img/menu.svg" alt="Menu" class="headermenu">
+            <img src="/public/img/menu.svg" alt="menu" aria-controls="mainNav" @click="menuIsOpen = !menuIsOpen">
+            <div id="mainNav" x-show="menuIsOpen" x-transition:duration.600ms class="menu">
+                <nav>
+                    <h1>wizard's heart</h1> <img src="/public/icones/logowhite.png" alt="structura">
+                    <img src="/public/icones/close.svg" alt="close" aria-controls="mainNav" @click="menuIsOpen = !menuIsOpen">
+                    <ul>
+                        <li><a href="article1.html">L'enchantement du Château ambulant</a></li>
+                        <hr>
+                        <li><a href="article2.html">La magie derrière la réplique “Voilà le feu qui cause!”
+</a></l
+                        <hr>
+                        <li><a href="architecte.html">Merry Go Round of Life: La bande son enchantée du Château Ambulant</a></li>
+                        <hr>
+                        <li><a href="frise.html">Cartographie d’un univers: découverte de nouveaux royaumes</a></li>
+                        <hr>
+                        <li><a href="contact.html">Hayao Miyazaki : Un maître de l'animation et de l'imagination</a></li>
+                        <hr>
+                        <li><a href="glossaire.html">Glossaire</a></li>
+                        <hr>
+                        <li><a href="filmographie.html">Filmographie</a></li>
+                        <hr>
+                        <li><a href="frise.html">Frise</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </header>
     <img src="../public/img/photo1.webp" alt="Photo page d'accueil" class="photohome">
