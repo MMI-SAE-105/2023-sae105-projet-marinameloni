@@ -85,5 +85,14 @@ stroke-width: 1px;
 }
 
 .flechefrise {
+;
+}
 
+.ligne {
+
+}
+
+.bloc {
+border-radius: 10px;
+background: rgba(102, 174, 206, 0.66);
 }
