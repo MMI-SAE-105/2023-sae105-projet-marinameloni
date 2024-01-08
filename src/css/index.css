@@ -2,8 +2,8 @@
 
 
 body {
-        margin: 0px;
-        overflow-x: hidden;
+  margin: 0px;
+  overflow-x: hidden;
 }
 
 .h1 {
@@ -90,8 +90,9 @@ width: 155px;
 }
 
 .h2frise__conteneur {
-  width: 126px;
-  
+ display: flex;
+ width: 134px;
+ padding-left: 13px;
 
 }
 
@@ -106,22 +107,26 @@ width: 155px;
 }
 
 .photofrisedroite {
-
+width: 148px;
+  height: 219px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  float: right;
   
 }
 .descfrise {
 color: #223E4B;
-
 text-align: justify;
 font-family: 'Baloo 2';
 font-size: 12px;
 font-style: normal;
-font-weight: 700;
+font-weight: 500;
 line-height: normal;
 
 }
 .descfrise__conteneur {
-    width: 100%;
+  
+
 }
 
 .flechefrise {
@@ -137,7 +142,8 @@ padding-right: 159px
 }
 
 .bloc {
-display: flex;
+  justify-content: center;
+margin-left: 30px;
 border-radius: 10px;
 background: rgba(102, 174, 206, 0.66);
 width: 316px;
