@@ -8,6 +8,7 @@
 .h1_header {
     font-family: 'StoriaLettering';
     font-size: 35px;
+    
 }
 
 .header {
@@ -19,6 +20,7 @@
     font-size: 35px;
     width: 100%;
     position: sticky;
+    display: flex;
 
      
 }
@@ -33,11 +35,17 @@
 
 }
 .textheader {
+    padding-right: 10px;
     
 }
 
 .headermenu {
     display: flex;
+    width: 24px;
+    height: 16px;
+    flex-shrink: 0;
+    padding-top: 14px;
+    padding-right: 20px;
 }
 
 .headerlogoconteneur {

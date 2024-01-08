@@ -18,13 +18,12 @@
             <div class="headertextconteneur">
             <img src="../public/img/header text.svg" alt="Header text" class="textheader"> </div>
             <div class="headermenuconteneur">
-            <img src="../public/img/menu.svg" alt="Menu" class="headermenu">
-            <img src="/public/img/menu.svg" alt="menu" aria-controls="mainNav" @click="menuIsOpen = !menuIsOpen">
+            <img src="/public/img/menu.svg" alt="menu" aria-controls="mainNav" @click="menuIsOpen = !menuIsOpen" class="headermenu">
 
             <div id="mainNav" x-show="menuIsOpen" x-transition:duration.600ms class="menu">
                 <nav>
                     <h1>wizard's heart</h1> <img src="/public/icones/logowhite.png" alt="logo">
-                    <img src="/public/icones/close.svg" alt="close" aria-controls="mainNav" @click="menuIsOpen = !menuIsOpen">
+                    <img src="/public/img/close.svg" alt="close" aria-controls="mainNav" @click="menuIsOpen = !menuIsOpen">
                     <ul>
                         <li><a href="article1.html">L'enchantement du Château ambulant</a></li>
                         <hr>
