@@ -56,14 +56,7 @@
         plaisir de le
         visionner, nous vous donnerons toutes les raisons de le découvrir !</p>
     <h2 class="h2">Lire les articles</h2>
-
-    <ul>
-        <li class="carrouselart"><a href="article1.html">L'enchantement du Château ambulant</a></li>
-        <li class="carrouselart"><a href="article2.html">La magie derrière la réplique “Voilà le feu qui cause!”</a></li>
-        <li class="carrouselart"><a href="article3.html">Merry Go Round of Life: La bande son enchantée du Château Ambulant</a></li>
-        <li class="carrouselart"><a href="article4.html">Cartographie d’un univers: découverte de nouveaux royaumes</a></li>
-        <li class="carrouselart"><a href="article5.html">Hayao Miyazaki : Un maître de l'animation et de l'imagination</a></li>
-    </ul>
+    <hr class="trait">
     <div class="carrousel" x-data="{hrefCourant: '#ecran-1',}">
                 <div class="carrousel_parent-ecrans" x-ref="parent"
                     @scroll.debounce.250ms.passive="hrefCourant = '#'+ [...$refs.parent.children].find(e=>e.getBoundingClientRect().x>=0).id">
