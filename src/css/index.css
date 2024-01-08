@@ -11,7 +11,7 @@ color: #FFF;
 
   text-align: center;
   /* H1 */
-  font-family: Baloo 2;
+  font-family: 'Baloo 2';
   font-size: 20px;
   font-style: normal;
   font-weight: 800;
@@ -35,6 +35,8 @@ color: #000;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .photohome {
@@ -78,8 +80,29 @@ stroke-width: 1px;
 }
 
 .photofrisegauche {
-
+width: 155px;
+  height: 219px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  float: left;
+ 
   
+}
+
+.h2frise__conteneur {
+  width: 126px;
+  
+
+}
+
+.h2frise {
+  font-family: 'Baloo 2';
+  color: #223E4B;
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
 }
 
 .photofrisedroite {
@@ -87,11 +110,26 @@ stroke-width: 1px;
   
 }
 .descfrise {
+color: #223E4B;
 
+text-align: justify;
+font-family: 'Baloo 2';
+font-size: 12px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+
+}
+.descfrise__conteneur {
+    width: 100%;
 }
 
 .flechefrise {
-;
+width: 49px;
+height: 45px;
+flex-shrink: 0;
+padding-left: 167px;
+padding-right: 159px
 }
 
 .ligne {
@@ -99,8 +137,12 @@ stroke-width: 1px;
 }
 
 .bloc {
+display: flex;
 border-radius: 10px;
 background: rgba(102, 174, 206, 0.66);
+width: 316px;
+height: 219px;
+
 }
 
 .photocalcifer {
@@ -108,4 +150,12 @@ background: rgba(102, 174, 206, 0.66);
   height: 54.026px;
   flex-shrink: 0;
   float: right;
+}
+
+.video {
+  width: 376px;
+  height: 211px;
+  flex-shrink: 0;
+  background: rgba(196, 196, 196, 0.21);
+  background-blend-mode: exclusion;
 }
