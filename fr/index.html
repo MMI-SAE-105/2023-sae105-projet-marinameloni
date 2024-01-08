@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" x-data="{menuIsOpen: false}">
 
 <head>
     <meta charset="UTF-8">
@@ -20,6 +20,7 @@
             <div class="headermenuconteneur">
             <img src="../public/img/menu.svg" alt="Menu" class="headermenu">
             <img src="/public/img/menu.svg" alt="menu" aria-controls="mainNav" @click="menuIsOpen = !menuIsOpen">
+
             <div id="mainNav" x-show="menuIsOpen" x-transition:duration.600ms class="menu">
                 <nav>
                     <h1>wizard's heart</h1> <img src="/public/icones/logowhite.png" alt="logo">
