@@ -175,3 +175,65 @@ height: 219px;
   background-color: #66AECE;
 
 }
+
+.carrouselimg {
+  max-width: 96%;
+  height: 200px;
+  border-radius: 10px;
+  opacity: 0.9;
+  background-color: rgba(0, 0, 0, 0.50);
+  margin-top: 10px;
+  filter: brightness(50%);
+
+    }
+
+.carrousel_parent-ecrans {
+  display: flex;
+  width: 96%;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  margin-left: 1%;
+  
+}
+
+.carrousel_ecran {
+  flex: none;
+  width: 96%;
+  scroll-snap-align: start
+}
+
+.carrousel_ecran figure {
+  margin: 0;
+}
+
+.carrousel {
+  position: relative;
+}
+
+
+.carrousel_btn-avant {
+  left: 0;
+}
+
+.carrousel_btn-apres {
+  right: 0;
+}
+
+.carrouseltxt {
+  width: 243px;
+  height: 86px;
+  flex-shrink: 0;
+  color: white;  
+  font-family: 'Baloo 2';
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  transform: translate(30px, -132px);
+  text-decoration: none;
+}
+.carrouseltxt a {
+  color: white;
+  text-decoration: none;
+}
