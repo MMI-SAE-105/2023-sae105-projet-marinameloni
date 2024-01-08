@@ -2,7 +2,7 @@
 - NOM : Meloni
 - PRÉNOM : Marina
 - URL du site : wizardsheart.mmeloni.fr
-- URL FIGMA :
+- URL FIGMA : https://www.figma.com/file/6gkoMZc3sU0p7c18I9EGbi/Maquettes-projet-individuel-%E2%80%94-pr%C3%A9nom-NOM-(Copy)?type=design&node-id=1501%3A167&mode=design&t=V7GeP9P6Wnh8mjbQ-1
 
 # Structure de départ pour le projet individuel.
 
