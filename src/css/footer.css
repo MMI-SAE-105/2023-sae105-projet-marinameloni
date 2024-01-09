@@ -5,7 +5,7 @@
   height: auto;
   background-color: #66AECE;
   color: white;
-  font-family: 'Baloo 2', cursive;
+  font-family: 'Baloo 2';
   text-align: center;
   font-size: 35px;
   flex-shrink: 0;
@@ -16,7 +16,7 @@
   color: #FFF;
   width: 88px;
   text-align: center;
-  font-family: Baloo 2;
+  font-family: 'Baloo 2';
   font-size: 30px;
   font-style: normal;
   font-weight: 600;
@@ -68,3 +68,18 @@ width: 33px;
     flex-shrink: 0;
     padding-right: 35px;
 }
+
+.footerlink {
+    color: #FFF !important;
+    text-align: center;
+    font-family: 'Baloo 2';
+    flex-shrink: 0;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+
+}
+
+
