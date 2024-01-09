@@ -54,11 +54,13 @@ stroke-width: 1px;
 }
 
 .photoarticle {
-   width: 375px;
-    height: 231px;
-    flex-shrink: 0;
+  width: 346px;
+  height: 176px;
+  flex-shrink: 0;
   background: rgba(196, 196, 196, 0.21);
-    background-blend-mode: exclusion;
+  background-blend-mode: exclusion;
+  border-radius: 10px;
+  background: url(<path-to-image>), lightgray 50% / cover no-repeat;
 }
 
 .desc {
