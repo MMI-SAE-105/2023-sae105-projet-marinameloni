@@ -26,14 +26,13 @@ color: #FFF;
 
 .paragraph {
 color: #000;
-
-  font-family: 'Baloo 2';
-  font-size: 15px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  padding-left: 10px;
-  padding-right: 10px;
+font-family: 'Baloo 2';
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+padding-left: 10px;
+padding-right: 10px;
 }
 
 .photohome {
