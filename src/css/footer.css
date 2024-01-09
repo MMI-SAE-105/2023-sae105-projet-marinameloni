@@ -10,7 +10,8 @@
   font-size: 35px;
   flex-shrink: 0;
   bottom: 0;
-  
+  margin: 0;
+
 }
 .h1footer {
   color: #FFF;
@@ -50,8 +51,9 @@ color: #FFF;
   height: 42px;
   flex-shrink: 0;
   float: right;
-    background-color: #66AECE;
-    padding-right: 25px;
+  background-color: #66AECE;
+  padding-right: 25px;
+  margin: 0;
 
 }
 .footerimg {
