@@ -234,3 +234,32 @@ height: 219px;
   color: white;
   text-decoration: none;
 }
+
+.photoprojet {
+  width: 315px;
+  height: 172px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  opacity: 0.8;
+  background: rgba(0, 0, 0, 0.50);
+  filter: brightness(50%);
+  
+}
+
+.photoprojet_conteneur {
+  padding-left: 30px;
+}
+
+.pprojet {
+    width: 243px;
+      height: 86px;
+      flex-shrink: 0;
+      color: white;
+      font-family: 'Baloo 2';
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      transform: translate(30px, -132px);
+      text-decoration: none;
+}
