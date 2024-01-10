@@ -36,10 +36,12 @@ padding-right: 10px;
 }
 
 .photohome {
-  width: 376px;
+  width: max-content;
   height: 470px;
-  flex-shrink: 0;
   background:lightgray 50% / cover no-repeat;
+  position: absolute;
+  z-index: 7;
+  
   
 }
 
@@ -293,4 +295,12 @@ width: 279px;
     flex-shrink: 0;
     stroke-width: 1px;
     stroke: rgba(255, 255, 255, 0.63);
+}
+.texthome {
+  position: relative;
+ z-index: 8;
+}
+
+.espace {
+  padding-top: 445px;
 }
