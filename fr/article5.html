@@ -1,78 +1,118 @@
-<html lang="fr">
+<html lang="fr" x-data="{menuIsOpen: false}">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Article Réalisateur</title>
     <link rel="stylesheet" href="../src/css/style.css">
-    <style>
-        body {
-            margin: 0px;
-        }
-    </style>
+    <script src="https://unpkg.com/alpinejs" defer></script>
+
 </head>
 
 <body>
-    <header class="header">
-        <div class="headerlogoconteneur">
-            <img src="../public/img/logo.svg" alt="Logo" class="logoheader">
-            <img src="../public/img/header text.svg" alt="Header text">
-            <img src="../public/img/menu.svg" alt="Menu">
+<header class="header">
+    <div class="headerlogoconteneur">
+        <img src="../public/img/logo.svg" alt="Logo" class="logoheader">
+    </div>
+    <div class="headertextconteneur">
+        <img src="../public/img/header text.svg" alt="Header text" class="textheader">
+    </div>
+    <div class="headermenuconteneur">
+        <img src="/public/img/menu.svg" alt="menu" aria-controls="mainNav" @click="menuIsOpen = !menuIsOpen"
+            class="headermenu">
+
+        <div id="mainNav" x-show="menuIsOpen" x-transition:duration.600ms class="menu">
+            <nav>
+                <img src="/public/img/header text.svg" alt="wizards heart" class="menutitle">
+                <a href="/en/index.html">
+                    <img class="lang" src="/public/img/language.svg" alt="language">
+                </a>
+                <img src="/public/img/close.svg" class="close" alt="close" aria-controls="mainNav"
+                    @click="menuIsOpen = !menuIsOpen">
+                <div class="titres">
+                    <li><a class="menutitre" href="article1.html">L'enchantement du Château ambulant</a></li>
+                    <hr class="menutrait">
+                    <li><a class="menutitre" href="article2.html">“Voilà le feu qui cause!”
+                        </a></li>
+                    <hr class="menutrait">
+                    <li><a class="menutitre" href="article3.html">La bande son enchantée du Château Ambulant</a></li>
+                    <hr class="menutrait">
+                    <li><a class="menutitre" href="article4.html">Cartographie d’un univers</a></li>
+                    <hr class="menutrait">
+                    <li><a class="menutitre" href="article5.html">Un maître de l'animation et de l'imagination</a></li>
+                    <hr class="menutrait">
+                    <li><a class="menutitre" href="glossaire.html">Glossaire</a></li>
+                    <hr class="menutrait">
+                    <li><a class="menutitre" href="filmographie.html">Filmographie</a></li>
+                    <hr class="menutrait">
+                    <li><a class="menutitre" href="frise.html">Frise</a></li>
+                </div>
+            </nav>
         </div>
-    </header>
+    </div>
+</header>
+<div x-show="!menuIsOpen">
 
     <img src="../public/img/article5.jpg" alt="photoarticle2" class="photoarticle">
-    <h1>Hayao Miyazaki : Un maître de l'animation et de l'imagination</h1>
+    <h1 class="h1text">Hayao Miyazaki : Un maître de l'animation et de l'imagination</h1>
     <p class="desc"> Rédigé par Marina Meloni • 2 min 30 de lecture</p>
+    <h2 class="h2">Un animateur exceptionnel</h2>
 
-    <p class="paragraph"> Reconnu pour son talent inégalé en animation et son imagination débordante, Hayao Miyazaki a laissé une empreinte
+    <p class="paragraph"> Reconnu pour son talent inégalé en animation et son <strong>imagination débordante</strong>, Hayao Miyazaki a laissé une empreinte
     indélébile sur le monde du cinéma. Sa motivation pour créer "Le Château Ambulant" peut être retracée jusqu'à son profond
-    sens de la justice, en particulier pendant la guerre en Irak.
+    sens de la justice, en particulier pendant la guerre en <strong>Irak</strong>.</p>
+
+    <p class="paragraph">
+    L'engagement de Miyazaki envers le <strong>pacifisme</strong> a été un thème récurrent dans ses œuvres. Il croit en le pouvoir du récit
+    pour transmettre les conséquences dévastatrices de la guerre et des <strong>conflits</strong>. C'est cette conviction qui se retrouve
+    dans la trame narrative de ce film. Le film sert de puissant véhicule pour illustrer la <strong>futilité</strong> de la guerre, un thème
+    sous-jacent qui résonne fortement avec son créateur.</p>
     
-    L'engagement de Miyazaki envers le pacifisme a été un thème récurrent dans ses œuvres. Il croit en le pouvoir du récit
-    pour transmettre les conséquences dévastatrices de la guerre et des conflits. C'est cette conviction qui se retrouve
-    dans la trame narrative de ce film. Le film sert de puissant véhicule pour illustrer la futilité de la guerre, un thème
-    sous-jacent qui résonne fortement avec son créateur.
-    
+    <p class="paragraph">
     L'année 2003 a marqué l'invasion de l'Irak par une coalition dirigée par les États-Unis. La guerre a suscité des
-    préoccupations mondiales et a provoqué des manifestations généralisées, y compris au Japon. Pour Miyazaki, un critique
+    <strong>préoccupations mondiales</strong> et a provoqué des manifestations généralisées, y compris au Japon. Pour Miyazaki, un critique
     farouche du militarisme et de la guerre, les événements de l'époque ont enflammé un profond sentiment d'injustice. C'est
     dans ce contexte que "Le Château Ambulant" prend une signification accrue, car la narration reflète les opinions de
     Miyazaki sur les conséquences des conflits. </p>
     <img src="../public/img/article5img1.jpg" alt="photoarticle1" class="photoarticle">
     <p class="desc">Photo tirée du film, engins de guerre.</p>
+    <h2 class="h2">Un conte sur l'amour et la guerre</h2>
 
     <p class="paragraph"> Le génie de Miyazaki réside dans sa capacité à mêler des thèmes complexes à une animation à couper le souffle. Ses films
     transportent les spectateurs dans des mondes imaginaires vibrants, regorgeant de personnages uniques et d'histoires
-    captivantes. "Le Château Ambulant" ne fait pas exception. Le château éponyme, avec son design fantaisiste et ses
+    captivantes. "Le Château Ambulant" ne fait pas exception. Le château éponyme, avec son design <strong>fantaisiste</strong> et ses
     caractéristiques enchanteresses, est un témoignage de sa créativité sans limites. Le don de Miyazaki pour créer des
     environnements détaillés et complexes insuffle de la vie dans les paysages qui servent de toile de fond aux aventures de
-    ses personnages.
+    ses personnages. </p>
     
-    Les personnages eux-mêmes sont un témoignage du talent narratif de Miyazaki. Howl, le sorcier complexe et multifacette,
+    <p class="paragraph">
+    Les personnages eux-mêmes sont un témoignage du <strong>talent narratif de Miyazaki</strong>. Howl, le sorcier complexe et multifacette,
     est emblématique de la nuance qui caractérise l'œuvre de Miyazaki. La transformation de Howl tout au long du film
-    reflète la transformation du monde qui l'entoure, influencée par les marées de la guerre et de l'amour.
-    
+    reflète la transformation du monde qui l'entoure, influencée par les marées de la guerre et de l'amour.</p>
+
+    <p class="paragraph">
     L'engagement de Miyazaki envers le récit ne se limite pas à son désir de divertir ; c'est un moyen par lequel il espère
-    transmettre ses opinions et plaider en faveur d'un monde plus pacifique. Le film est une manifestation de cette mission.
+    transmettre ses opinions et plaider en faveur d'<strong>un monde plus pacifique</strong>. Le film est une manifestation de cette mission.
     C'est une mosaïque d'animation époustouflante, de développement de personnages élaboré et d'un message puissant sur la
     futilité de la guerre. </p>
 
     <img src="../public/img/article5img2.jpg" alt="photoarticle1" class="photoarticle">
     <p class="desc">Photo tirée du film, la paisible maison d'enfance de Howl.</p>
+    <h2 class="h2">Un témoignage de l'engagement de Miyazaki envers le pacifisme</h2>
     <p class="paragraph"> En conclusion, la motivation de Hayao Miyazaki pour créer "Le Château Ambulant" est un témoignage de son engagement
     inébranlable envers le pacifisme et son profond sentiment d'injustice. Le film est un puissant moyen de transmettre ses
     opinions sur les conséquences des conflits, reflétant sa conviction que le récit peut servir de moyen pour plaider en
     faveur d'un monde plus pacifique. Le talent immense de Miyazaki en animation et son imagination débordante ont non
     seulement enrichi le monde de l'animation, mais ont également démontré le potentiel du médium pour communiquer des
-    messages profonds et susciter la réflexion.
-    
+    messages profonds et susciter la réflexion.</p>
+
+    <p class="paragraph">
     À travers ses œuvres visionnaires, Miyazaki a laissé une empreinte indélébile sur le monde de l'animation, nous
     rappelant que le récit peut être une force de changement et une source d'inspiration pour les générations à venir.</p>
 
     <p class="paragraph">prochain article</p>
     <img src="../public/img/arrow.png" alt="arrow" class="arrow">
-
+</div>
 <footer class="footer">
     <div>
         <h1 class="h1footer">Aide</h1>
