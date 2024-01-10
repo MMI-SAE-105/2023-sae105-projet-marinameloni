@@ -1,44 +1,81 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" x-data="{menuIsOpen: false}">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Frise</title>
     <link rel="stylesheet" href="../src/css/style.css">
-    <style>
-        body {
-            margin: 0px;
-        }
-    </style>
+    <script src="https://unpkg.com/alpinejs" defer></script>
 </head>
 
 <body>
-    <header class="header">
-        <div class="headerlogoconteneur">
-            <a href="/fr/index.html">
-                <img src="../public/img/logo.svg" alt="Logo" class="logoheader">
-            </a>
-            <a href="/fr/index.html">
-                <img src="../public/img/header text.svg" alt="Header text">
-            </a>
-            <img src="../public/img/menu.svg" alt="Menu">
-        </div>
-    </header>
+<header class="header">
+    <div class="headerlogoconteneur">
+        <a href="/fr/index.html">
+            <img src="../public/img/logo.svg" alt="Logo" class="logoheader">
+        </a>
+    </div>
+    <div class="headertextconteneur">
+        <a href="/fr/index.html">
+            <img src="../public/img/header text.svg" alt="Header text" class="textheader">
+        </a>
+    </div>
+    <div class="headermenuconteneur">
+        <img src="/public/img/menu.svg" alt="menu" aria-controls="mainNav" @click="menuIsOpen = !menuIsOpen"
+            class="headermenu">
 
- <h2 class="h2">À propos</h2>
+        <div id="mainNav" x-show="menuIsOpen" x-transition:duration.600ms class="menu">
+            <nav>
+                <img src="/public/img/header text.svg" alt="wizards heart" class="menutitle">
+                <a href="/en/index.html">
+                    <img class="lang" src="/public/img/language.svg" alt="language">
+                </a>
+                <img src="/public/img/close.svg" class="close" alt="close" aria-controls="mainNav"
+                    @click="menuIsOpen = !menuIsOpen">
+                <div class="titres">
+                    <li><a class="menutitre" href="article1.html">L'enchantement du Château ambulant</a></li>
+                    <hr class="menutrait">
+                    <li><a class="menutitre" href="article2.html">“Voilà le feu qui cause!”
+                        </a></li>
+                    <hr class="menutrait">
+                    <li><a class="menutitre" href="article3.html">La bande son enchantée du Château Ambulant</a></li>
+                    <hr class="menutrait">
+                    <li><a class="menutitre" href="article4.html">Cartographie d’un univers</a></li>
+                    <hr class="menutrait">
+                    <li><a class="menutitre" href="article5.html">Un maître de l'animation et de l'imagination</a></li>
+                    <hr class="menutrait">
+                    <li><a class="menutitre" href="glossaire.html">Glossaire</a></li>
+                    <hr class="menutrait">
+                    <li><a class="menutitre" href="filmographie.html">Filmographie</a></li>
+                    <hr class="menutrait">
+                    <li><a class="menutitre" href="frise.html">Frise</a></li>
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>
+<div x-show="!menuIsOpen">
+        <img src="../public/img/apropos.jpg" alt="photoarticle1" class="photoarticle">
+ <h2 class="h1text">À propos</h2>
  <p class="paragraph">Je m'appelle Marina et je suis étudiante en Métiers du Multimédia et de l'Internet à l'Université de Belfort-Montbéliard
-(BUT MMi). Ce site est un projet appelé "Wizard’s Heart", dont le but est de créer une page web fonctionnelle autour
+(BUT MMi).</p>
+<p class="paragraph"> Ce site est un projet appelé "Wizard’s Heart", dont le but est de créer une page web fonctionnelle autour
 d'une citation de film. Mon objectif est donc de fournir du contenu à tous les amoureux de films Ghibli.</p>
 
-<img class="photocalcifer" src="../public/img/Calcifer.png" alt="Calcifer">
-    <div class="footer">
-        <h1>Aide</h1>
-        <p><a href="a-propos.html">À propos</a></p>
-        <p><a href="contact.html">Contact</a></p>
-        <img src="/public/img/insta.svg" alt="Instagram">
-        <img src="/public/img/X.svg" alt="Twitter">
-        <img src="/public/img/logommi.png" alt="Logo MMI">
+<img class="photocalcifer" src="../public/img/Calcifer.png" alt="Calcifer"></div>
+<footer class="footer">
+    <div>
+        <h1 class="h1footer">Aide</h1>
+        <div class="footerlink_conteneur">
+            <p class="footerlink"><a class="footerlink" href="a-propos.html">À propos</a></p>
+            <p class="footerlink"><a class="footerlink" href="contact.html">Contact</a></p>
+        </div>
+        <img src="/public/img/Instagram white.png" alt="Instagram" class="footerimg">
+        <img src="/public/img/x logo-white.png" alt="Twitter" class="footerimg">
+        <img src="/public/img/logommi.png" alt="Logo MMI" class="footerimgmmi">
+        <p class="footerp">Projet réalisé dans le cadre d’un exercice pédagogique au département MMI Montbéliard</p>
     </div>
-
+    </div>
+</footer>
 </body>
