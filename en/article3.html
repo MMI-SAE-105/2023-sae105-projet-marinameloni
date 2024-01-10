@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en" x-data="{menuIsOpen: false}">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soundtrack Article</title>
+    <link rel="stylesheet" href="../src/css/style.css">
+    <script src="https://unpkg.com/alpinejs" defer></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="headerlogocontainer">
+            <a href="/en/index.html">
+                <img src="../public/img/logo.svg" alt="Logo" class="logoheader">
+            </a>
+        </div>
+        <div class="headertextcontainer">
+            <a href="/en/index.html">
+                <img src="../public/img/header text.svg" alt="Header text" class="textheader">
+            </a>
+        </div>
+        <div class="headermenucontainer">
+            <img src="/public/img/menu.svg" alt="menu" aria-controls="mainNav" @click="menuIsOpen = !menuIsOpen"
+                class="headermenu">
+
+            <div id="mainNav" x-show="menuIsOpen" x-transition:duration.600ms class="menu">
+                <nav>
+                    <img src="/public/img/header text.svg" alt="wizards heart" class="menutitle">
+                    <a href="/en/index.html">
+                        <img class="lang" src="/public/img/language.svg" alt="language">
+                    </a>
+                    <img src="/public/img/close.svg" class="close" alt="close" aria-controls="mainNav"
+                        @click="menuIsOpen = !menuIsOpen">
+                    <div class="titles">
+                        <li><a class="menutitle" href="article1.html">The Enchantment of Howl's Moving Castle</a></li>
+                        <hr class="menuline">
+                        <li><a class="menutitle" href="article2.html">"Here Comes the Fire!"</a></li>
+                        <hr class="menuline">
+                        <li><a class="menutitle" href="article3.html">The Enchanted Soundtrack of Howl's Moving
+                                Castle</a></li>
+                        <hr class="menuline">
+                        <li><a class="menutitle" href="article4.html">Mapping a Universe</a></li>
+                        <hr class="menuline">
+                        <li><a class="menutitle" href="article5.html">A Master of Animation and Imagination</a></li>
+                        <hr class="menuline">
+                        <li><a class="menutitle" href="glossary.html">Glossary</a></li>
+                        <hr class="menuline">
+                        <li><a class="menutitle" href="filmography.html">Filmography</a></li>
+                        <hr class="menuline">
+                        <li><a class="menutitle" href="timeline.html">Timeline</a></li>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div x-show="!menuIsOpen">
+
+        <img src="../public/img/article3.jpg" alt="photoarticle2" class="photoarticle1">
+        <h1 class="h1text">Merry Go Round of Life: The Enchanted Soundtrack of Howl's Moving Castle</h1>
+        <p class="desc">Written by Marina Meloni • 2 min 30 read</p>
+
+        <p class="paragraph"> In the enchantment of the animation world, one name stands out when talking about the
+            harmonious marriage of sound and images: Mamoru Fujisawa, known professionally as Joe Hisaishi. His musical
+            compositions have left an indelible mark in the cinema realm, especially in Hayao Miyazaki's works. His
+            enchanting composition, "Merry-Go-Round of Life," present in "Howl's Moving Castle," perfectly illustrates
+            his ability to enhance storytelling through music.
+
+            Born in Nagano, Japan, Mamoru Fujisawa knew he needed to adopt a new name to make himself more accessible
+            abroad. Thus, he chose the more accessible stage name Joe Hisaishi. His contributions to the world of film
+            music are simply extraordinary. His collaborations with Hayao Miyazaki are particularly remarkable as his
+            compositions played an essential role in the emotional depth and immersive quality of Miyazaki's films.
+
+            "Merry-Go-Round of Life" is a testament to Hisaishi's incredible talent. This piece evokes a sense of
+            nostalgia and transports the listener into a world of wonder, reflecting the enchanting narration of the
+            film. This waltz, with its whimsical melody and elegant orchestration, captures the essence of fantasy and
+            escapism, essential elements of the magic of "Howl's Moving Castle."</p>
+        <img src="../public/img/article2img2.jpg" alt="photoarticle1" class="photoarticle">
+        <p class="desc">Photo from the film, The character "Turnip" highlighted.</p>
+
+        <p class="paragraph"> Hisaishi's orchestrated musical journey complements the visual art and storytelling of the
+            film, inviting viewers to escape into a world where magic, love, and adventure await them. The enchanting
+            melody of "Merry-Go-Round of Life" serves as a gateway to the imaginative universe created by Hayao
+            Miyazaki.
+            Hisaishi's ability to capture the essence of the story through music is truly magical. He understands the
+            power of a well-composed score to connect the audience with the characters and their emotional journeys. His
+            work in "Howl's Moving Castle" and many other films has solidified his status as one of the eminent
+            composers in the world of animation.
+
+            As we delve into the enchanting world of "Howl's Moving Castle," it becomes evident that Joe Hisaishi's
+            musical genius is an indispensable part of the storytelling. His compositions, including "Merry-Go-Round of
+            Life," are more than just accompanying music; they are the very heart of the film.</p>
+
+        <img src="../public/img/article2img3.jpg" alt="photoarticle1" class="photoarticle">
+        <p class="desc">Photo from the film, Kingsbury city.</p>
+        <p class="paragraph"> With his music, Hisaishi has the remarkable ability to transport us into fantastical
+            worlds and make us believe in the magic of cinema. The enchantment surrounding "Howl's Moving Castle"
+            extends beyond its visual splendor, reaching into the captivating melodies that persist long after the
+            credits roll.</p>
+
+        <p class="paragraph">next article</p>
+        <img src="../public/img/arrow.png" alt="arrow" class="arrow">
+
+        <footer class="footer">
+            <div>
+                <h1 class="h1footer">Help</h1>
+                <div class="footerlink_container">
+                    <p class="footerlink"><a class="footerlink" href="about.html">About</a></p>
+                    <p class="footerlink"><a class="footerlink" href="contact.html">Contact</a></p>
+                </div>
+                <img src="/public/img/Instagram white.png" alt="Instagram" class="footerimg">
+                <img src="/public/img/x logo-white.png" alt="Twitter" class="footerimg">
+                <img src="/public/img/logommi.png" alt="MMI Logo" class="footerimgmmi">
+                <p class="footerp">Project carried out as an educational exercise at the MMI Montbéliard department.</p>
+            </div>
+        </footer>
+
+</body>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" x-data="{menuIsOpen: false}">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Film Article</title>
+    <link rel="stylesheet" href="../src/css/style.css">
+    <script src="https://unpkg.com/alpinejs" defer></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="headerlogocontainer">
+            <a href="/en/index.html">
+                <img src="../public/img/logo.svg" alt="Logo" class="logoheader">
+            </a>
+        </div>
+        <div class="headertextcontainer">
+            <a href="/en/index.html">
+                <img src="../public/img/header text.svg" alt="Header text" class="textheader">
+            </a>
+        </div>
+        <div class="headermenucontainer">
+            <img src="/public/img/menu.svg" alt="menu" aria-controls="mainNav" @click="menuIsOpen = !menuIsOpen"
+                class="headermenu">
+
+            <div id="mainNav" x-show="menuIsOpen" x-transition:duration.600ms class="menu">
+                <nav>
+                    <img src="/public/img/header text.svg" alt="wizards heart" class="menutitle">
+                    <a href="/en/index.html">
+                        <img class="lang" src="/public/img/language.svg" alt="language">
+                    </a>
+                    <img src="/public/img/close.svg" class="close" alt="close" aria-controls="mainNav"
+                        @click="menuIsOpen = !menuIsOpen">
+                    <div class="titles">
+                        <li><a class="menutitle" href="article1.html">The Enchantment of Howl's Moving Castle</a></li>
+                        <hr class="menuline">
+                        <li><a class="menutitle" href="article2.html">"Here Comes the Fire!"</a></li>
+                        <hr class="menuline">
+                        <li><a class="menutitle" href="article3.html">The Enchanted Soundtrack of Howl's Moving
+                                Castle</a></li>
+                        <hr class="menuline">
+                        <li><a class="menutitle" href="article4.html">Mapping a Universe</a></li>
+                        <hr class="menuline">
+                        <li><a class="menutitle" href="article5.html">A Master of Animation and Imagination</a></li>
+                        <hr class="menuline">
+                        <li><a class="menutitle" href="glossary.html">Glossary</a></li>
+                        <hr class="menuline">
+                        <li><a class="menutitle" href="filmography.html">Filmography</a></li>
+                        <hr class="menuline">
+                        <li><a class="menutitle" href="timeline.html">Timeline</a></li>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div x-show="!menuIsOpen">
+
+        <img src="../public/img/article2img1.png" alt="photoarticle2" class="photoarticle1">
+        <h1 class="h1text">The Magic Behind the Line "Here Comes the Fire!"</h1>
+        <p class="desc">Written by Marina Meloni • 2 min 30 read</p>
+        <h2 class="h2">Calcifer, the Talking Fire</h2>
+        <p class="paragraph"> In the enchanted world of Hayao Miyazaki's "Howl's Moving Castle," a diverse and memorable
+            cast of characters takes center stage. Among them, <strong>Calcifer</strong>, the talking fire, stands out
+            as one of the most enigmatic and intriguing figures in the story. But what makes this fire
+            <strong>speak</strong>, and how does this phenomenon relate to the overall plot?</p>
+        <p class="paragraph">Calcifer's ability to speak is inherently linked to the heart of the castle, and by
+            extension, to Howl himself. Calcifer is, essentially, the living heart and the engine of the moving
+            fortress. This magical connection is established through a <strong>mysterious contract</strong> that binds
+            Calcifer to Howl, and consequently, to the castle. It's this contract that not only keeps the castle moving
+            but also grants Calcifer the power of speech and consciousness.</p>
+        <p class="paragraph"><strong>The heart of the castle</strong>, represented by Calcifer, encapsulates the duality
+            of magic and technology that permeates the entire story. While Calcifer is a magical being, his deep
+            understanding of the complex machinery of the castle underscores the fine line between the two. This
+            juxtaposition reflects the broader theme of the film: the coexistence of magic and technology in a world
+            ravaged by war.</p>
+        <img src="../public/img/article2img2.jpg" alt="photoarticle1" class="photoarticle">
+        <p class="desc">Photo from the film, Sophie facing the war.</p>
+        <h2 class="h2">A Complex Character</h2>
+        <p class="paragraph"> Calcifer's role in the plot goes beyond being a simple source of heat and energy. He is
+            essential for the emotional depth of the story, representing both the <strong>burdens and
+                sacrifices</strong> individuals consent to in the pursuit of their goals. His constant struggle to keep
+            the castle moving at the expense of his own existence reflects the broader theme of personal sacrifice for a
+            greater cause, a theme that resonates throughout the film.</p>
+        <p class="paragraph">The relationship between Calcifer and Howl adds an additional layer of complexity to the
+            story. Calcifer's mischievous and sometimes cheeky behavior serves as a counterbalance to Howl's more
+            serious and dark personality. Their dynamic not only provides moments of lightness but also highlights the
+            importance of forming bonds and supporting each other in the face of adversity.</p>
+        <p class="paragraph">Calcifer's character arc, though subtle, is poignant. His desire to break free from the
+            contract and live in freedom underscores the broader theme of <strong>personal liberation</strong> and
+            breaking free from chains. It serves as a reminder that even in the most magical circumstances, characters
+            aspire to self-determination and a life of their own.</p>
+
+        <img src="../public/img/article2img3.jpg" alt="photoarticle1" class="photoarticle">
+        <p class="desc">Photo from the film, Young Howl meeting Calcifer.</p>
+        <h2 class="h2">A Beloved Character</h2>
+        <p class="paragraph"> In conclusion, Calcifer, the talking fire, is a character that enriches the narration of
+            Howl's Moving Castle in numerous ways. His connection with the heart of the castle, the juxtaposition of
+            magic and technology, and his dynamic with Howl all contribute to the depth and complexity of the film.
+            Additionally, his character is greatly appreciated by fans, especially for his cute appearance and amusing
+            personality.</p>
+
+        <p class="paragraph">next article</p>
+        <img src="../public/img/arrow.png" alt="arrow" class="arrow">
+    </div>
+    <footer class="footer">
+        <div>
+            <h1 class="h1footer">Help</h1>
+            <div class="footerlink_container">
+                <p class="footerlink"><a class="footerlink" href="about.html">About</a></p>
+                <p class="footerlink"><a class="footerlink" href="contact.html">Contact</a></p>
+            </div>
+            <img src="/public/img/Instagram white.png" alt="Instagram" class="footerimg">
+            <img src="/public/img/x logo-white.png" alt="Twitter" class="footerimg">
+            <img src="/public/img/logommi.png" alt="MMI Logo" class="footerimgmmi">
+            <p class="footerp">Project carried out as an educational exercise at the MMI Montbéliard department.</p>
+        </div>
+    </footer>
+</body>
