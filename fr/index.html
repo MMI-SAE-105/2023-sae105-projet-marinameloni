@@ -61,7 +61,9 @@ Château Ambulant," offrant une immersion totale dans son univers magique. Si vo
 plaisir de le
 visionner, nous vous donnerons toutes les raisons de le découvrir !</p>
 <h2 class="h2">Lire les articles</h2>
-<hr class="trait">
+<svg xmlns="http://www.w3.org/2000/svg" width="118" height="2" viewBox="0 0 118 2" fill="none">
+    <path d="M1 1H117" stroke="#264574" stroke-opacity="0.333333" stroke-linecap="round" />
+</svg>
 <div class="carrousel" x-data="{hrefCourant: '#ecran-1',}">
 <div class="carrousel_parent-ecrans" x-ref="parent"
 @scroll.debounce.250ms.passive="hrefCourant = '#'+ [...$refs.parent.children].find(e=>e.getBoundingClientRect().x>=0).id">
@@ -98,18 +100,23 @@ visionner, nous vous donnerons toutes les raisons de le découvrir !</p>
 </div>
 
 <h2 class="h2">Extrait du film</h2>
-<hr class="trait"> 
+<svg xmlns="http://www.w3.org/2000/svg" width="118" height="2" viewBox="0 0 118 2" fill="none">
+    <path d="M1 1H117" stroke="#264574" stroke-opacity="0.333333" stroke-linecap="round" />
+</svg>
 <video controls class="video">
 <source src="../public/video/bandeannonce.mp4" type="video/mp4">
 </video>
 
 <h2 class="h2">Découvrir d'autres projets</h2>
-<hr class="trait">
+<svg xmlns="http://www.w3.org/2000/svg" width="118" height="2" viewBox="0 0 118 2" fill="none">
+    <path d="M1 1H117" stroke="#264574" stroke-opacity="0.333333" stroke-linecap="round" />
+</svg>
 <div class="photoprojet_conteneur">
 <img src="../public/img/projet.jpg" alt="Photo projet" class="photoprojet">
 </div>
+<a href="autresprojet.html">
 <p class="pprojet">Projets du groupe C1</p>
-<p class="paragraph">Découvrez les sites des autres élèves en BUT MMi</p>
+</a>
 </div>
 </main>
 <footer class="footer">
