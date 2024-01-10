@@ -1,38 +1,71 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" x-data="{menuIsOpen: false}">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Article Film</title>
     <link rel="stylesheet" href="../src/css/style.css">
-    <style>
-        body {
-            margin: 0px;
-        }
-    </style>
+    <script src="https://unpkg.com/alpinejs" defer></script>
 </head>
 
 <body>
-    <header class="header">
-        <div class="headerlogoconteneur">
-            <img src="../public/img/logo.svg" alt="Logo" class="logoheader">
-            <img src="../public/img/header text.svg" alt="Header text">
-            <img src="../public/img/menu.svg" alt="Menu">
-        </div>
-    </header>
+<header class="header">
+    <div class="headerlogoconteneur">
+        <img src="../public/img/logo.svg" alt="Logo" class="logoheader">
+    </div>
+    <div class="headertextconteneur">
+        <img src="../public/img/header text.svg" alt="Header text" class="textheader">
+    </div>
+    <div class="headermenuconteneur">
+        <img src="/public/img/menu.svg" alt="menu" aria-controls="mainNav" @click="menuIsOpen = !menuIsOpen"
+            class="headermenu">
 
+        <div id="mainNav" x-show="menuIsOpen" x-transition:duration.600ms class="menu">
+            <nav>
+                <img src="/public/img/header text.svg" alt="wizards heart" class="menutitle">
+                <a href="/en/index.html">
+                    <img class="lang" src="/public/img/language.svg" alt="language">
+                </a>
+                <img src="/public/img/close.svg" class="close" alt="close" aria-controls="mainNav"
+                    @click="menuIsOpen = !menuIsOpen">
+                <div class="titres">
+                    <li><a class="menutitre" href="article1.html">L'enchantement du Château ambulant</a></li>
+                    <hr class="menutrait">
+                    <li><a class="menutitre" href="article2.html">“Voilà le feu qui cause!”
+                        </a></li>
+                    <hr class="menutrait">
+                    <li><a class="menutitre" href="article3.html">La bande son enchantée du Château Ambulant</a></li>
+                    <hr class="menutrait">
+                    <li><a class="menutitre" href="article4.html">Cartographie d’un univers</a></li>
+                    <hr class="menutrait">
+                    <li><a class="menutitre" href="article5.html">Un maître de l'animation et de l'imagination</a></li>
+                    <hr class="menutrait">
+                    <li><a class="menutitre" href="glossaire.html">Glossaire</a></li>
+                    <hr class="menutrait">
+                    <li><a class="menutitre" href="filmographie.html">Filmographie</a></li>
+                    <hr class="menutrait">
+                    <li><a class="menutitre" href="frise.html">Frise</a></li>
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>
+<div x-show="!menuIsOpen">
+<main>
     <img src="../public/img/article1img1.jpg" alt="photoarticle1" class="photoarticle">
-    <h1>L'enchantement du Château ambulant</h1>
+    <h1 class="h1text">L'enchantement du Château ambulant</h1>
     <p class="desc"> Rédigé par Marina Meloni • 2 min 30 de lecture</p>
 
     <p class="paragraph"> Pour ceux qui ont exploré l'univers envoûtant du "Château ambulant" de Hayao Miyazaki, la simple mention du film évoque
-    une douce vague de nostalgie. C'est un périple captivant à travers un royaume où le merveilleux, la magie et l'amour se
-    mêlent harmonieusement, donnant vie à un conte mémorable. Au cœur de cette histoire enchanteresse réside Howl, un
-    sorcier charismatique mais tourmenté, et son propre château ambulant. Sur fond de conflit déchirant le pays, le film
+    une douce vague de nostalgie. C'est un périple captivant à travers un royaume où le <strong>merveilleux</strong>, la<strong> magie</strong> et <strong>l'amour</strong> se
+    mêlent harmonieusement, donnant vie à un conte mémorable.
+    <p class="paragraph">Au cœur de cette histoire enchanteresse réside <strong>Howl</strong>, un
+    sorcier charismatique mais tourmenté, et son propre château ambulant. Sur fond de <strong>conflit</strong> déchirant le pays, le film
     nous présente Sophie, une jeune femme dont la vie prend un tournant inattendu lorsqu'elle croise le chemin de Howl et de
-    son énigmatique château. Le château lui-même est un chef-d'œuvre imaginaire : une colossale machine ambulante qui change
-    constamment de forme et d'emplacement. Sa métamorphose reflète l'état d'esprit de son propriétaire, Howl, en faisant une
+    son énigmatique château.</p> 
+    <p class="paragraph">Le château lui-même est un chef-d'œuvre imaginaire : une colossale machine ambulante qui change
+    constamment de forme et d'emplacement. Sa métamorphose reflète <strong>l'état d'esprit</strong> de son propriétaire, Howl, en faisant une
     représentation visuelle de ses tourments intérieurs. Cette fusion captivante de magie et de mécanique illustre la
     capacité de Miyazaki à créer des mondes visuellement éblouissants et profondément émouvants. </p>
     <img src="../public/img/article1img2.jpg" alt="photoarticle1" class="photoarticle">
@@ -56,17 +89,23 @@
     guerre, le film continue de captiver autant les nouveaux adeptes que les fans de longue date. Le génie de Miyazaki
     brille de mille feux dans ce chef-d'œuvre intemporel, laissant en nous une nostalgie pour la magie qu'il est le seul à
     pouvoir insuffler sur grand écran. </p>
-
+</div>
     <p class="paragraph">prochain article</p>
+    </div>
     <img src="../public/img/arrow.png" alt="arrow" class="arrow">
-
-        <div class="footer">
-            <h1>Aide</h1>
-            <p>À propos</p>
-            <p>Contact</p>
-            <img src="/public/img/insta.svg" alt="Instagram">
-            <img src="/public/img/X.svg" alt="Twitter">
-            <img src="/public/img/logommi.png" alt="Logo MMI">
+</main>
+<footer class="footer">
+    <div>
+        <h1 class="h1footer">Aide</h1>
+        <div class="footerlink_conteneur">
+            <p class="footerlink"><a class="footerlink" href="a-propos.html">À propos</a></p>
+            <p class="footerlink"><a class="footerlink" href="contact.html">Contact</a></p>
         </div>
-
+        <img src="/public/img/Instagram white.png" alt="Instagram" class="footerimg">
+        <img src="/public/img/x logo-white.png" alt="Twitter" class="footerimg">
+        <img src="/public/img/logommi.png" alt="Logo MMI" class="footerimgmmi">
+        <p class="footerp">Projet réalisé dans le cadre d’un exercice pédagogique au département MMI Montbéliard</p>
+    </div>
+    </div>
+</footer>
 </body>
