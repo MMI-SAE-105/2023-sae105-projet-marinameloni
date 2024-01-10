@@ -36,7 +36,7 @@ padding-right: 10px;
 }
 
 .photohome {
-  width: 375px;
+  width: max-content;
   height: 600px;
   background:lightgray 50% / cover no-repeat;
   position: absolute;
