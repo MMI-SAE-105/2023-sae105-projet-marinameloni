@@ -36,14 +36,11 @@ padding-right: 10px;
 }
 
 .photohome {
-  width: max-content;
+  width: 375px;
   height: 600px;
   background:lightgray 50% / cover no-repeat;
   position: absolute;
-  z-index: 7;
-  
-  
-  
+  z-index: 7;  
 }
 
 .trait {
