@@ -1,35 +1,65 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" x-data="{menuIsOpen: false}">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Frise</title>
     <link rel="stylesheet" href="../src/css/style.css">
-    <style>
-        body {
-            margin: 0px;
-        }
-    </style>
+    <script src="https://unpkg.com/alpinejs" defer></script>
 </head>
 
 <body>
-    <header class="header">
-        <div class="headerlogoconteneur">
-            <img src="../public/img/logo.svg" alt="Logo" class="logoheader">
-            <img src="../public/img/header text.svg" alt="Header text">
-            <img src="../public/img/menu.svg" alt="Menu">
+<header class="header">
+    <div class="headerlogoconteneur">
+        <img src="../public/img/logo.svg" alt="Logo" class="logoheader">
+    </div>
+    <div class="headertextconteneur">
+        <img src="../public/img/header text.svg" alt="Header text" class="textheader">
+    </div>
+    <div class="headermenuconteneur">
+        <img src="/public/img/menu.svg" alt="menu" aria-controls="mainNav" @click="menuIsOpen = !menuIsOpen"
+            class="headermenu">
+
+        <div id="mainNav" x-show="menuIsOpen" x-transition:duration.600ms class="menu">
+            <nav>
+                <img src="/public/img/header text.svg" alt="wizards heart" class="menutitle">
+                <a href="/en/index.html">
+                    <img class="lang" src="/public/img/language.svg" alt="language">
+                </a>
+                <img src="/public/img/close.svg" class="close" alt="close" aria-controls="mainNav"
+                    @click="menuIsOpen = !menuIsOpen">
+                <div class="titres">
+                    <li><a class="menutitre" href="article1.html">L'enchantement du Château ambulant</a></li>
+                    <hr class="menutrait">
+                    <li><a class="menutitre" href="article2.html">“Voilà le feu qui cause!”
+                        </a></li>
+                    <hr class="menutrait">
+                    <li><a class="menutitre" href="article3.html">La bande son enchantée du Château Ambulant</a></li>
+                    <hr class="menutrait">
+                    <li><a class="menutitre" href="article4.html">Cartographie d’un univers</a></li>
+                    <hr class="menutrait">
+                    <li><a class="menutitre" href="article5.html">Un maître de l'animation et de l'imagination</a></li>
+                    <hr class="menutrait">
+                    <li><a class="menutitre" href="glossaire.html">Glossaire</a></li>
+                    <hr class="menutrait">
+                    <li><a class="menutitre" href="filmographie.html">Filmographie</a></li>
+                    <hr class="menutrait">
+                    <li><a class="menutitre" href="frise.html">Frise</a></li>
+                </div>
+            </nav>
         </div>
-    </header>
+    </div>
+</header>
+<div x-show="!menuIsOpen">
 
-    <img src="../public/img/article2img1.png" alt="articlefrise" class="photoarticle">
-    <h1 class="h1">Frise</h1>
+    <img src="/public/img/frise.jpg" alt="articlefrise" class="photoarticle">
+    <h1 class="h1text">Frise</h1>
   <p class="paragraph">Plongez dans l'univers envoûtant de Diana Wynne Jones à travers une fascinante frise chronologique qui trace les œuvres
-littéraires ayant inspiré le célèbre film d'animation "Le Château Ambulant".
-
-Explorez les époques et les récits qui ont façonné cette histoire captivante, et découvrez comment l'imagination unique
+<strong>littéraires</strong> ayant inspiré le célèbre film d'animation "Le Château Ambulant".</p>
+<p class="paragraph">Explorez les époques et les récits qui ont façonné cette histoire captivante, et découvrez comment l'imagination unique
 de l'auteure a donné naissance à un monde où la magie se mêle à la réalité. Suivez le fil du temps pour mieux comprendre
-les racines de cette aventure féerique qui a conquis les cœurs du public du monde entier.</p>
+les racines de cette aventure <strong>féerique</strong> qui a conquis les cœurs du public du monde entier.</p>
 
 <div class="bloc">
 <img src="../public/img/photofrise1.webp" alt="chateaudehurle" class="photofrisegauche">
@@ -72,16 +102,20 @@ les racines de cette aventure féerique qui a conquis les cœurs du public du mo
     </p>
 </div>
 </div>
-
-<p>Retour au menu</p>
-
-<div class="footer">
-    <h1>Aide</h1>
-    <p><a href="a-propos.html">À propos</a></p>
-    <p><a href="contact.html">Contact</a></p>
-    <img src="/public/img/insta.svg" alt="Instagram">
-    <img src="/public/img/X.svg" alt="Twitter">
-    <img src="/public/img/logommi.png" alt="Logo MMI">
 </div>
+<footer class="footer">
+    <div>
+        <h1 class="h1footer">Aide</h1>
+        <div class="footerlink_conteneur">
+            <p class="footerlink"><a class="footerlink" href="a-propos.html">À propos</a></p>
+            <p class="footerlink"><a class="footerlink" href="contact.html">Contact</a></p>
+        </div>
+        <img src="/public/img/Instagram white.png" alt="Instagram" class="footerimg">
+        <img src="/public/img/x logo-white.png" alt="Twitter" class="footerimg">
+        <img src="/public/img/logommi.png" alt="Logo MMI" class="footerimgmmi">
+        <p class="footerp">Projet réalisé dans le cadre d’un exercice pédagogique au département MMI Montbéliard</p>
+    </div>
+    </div>
+</footer>
 
 </body>
