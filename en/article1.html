@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" x-data="{menuIsOpen: false}">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article Film</title>
+    <link rel="stylesheet" href="../src/css/style.css">
+    <script src="https://unpkg.com/alpinejs" defer></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="headerlogoconteneur">
+            <a href="/en/index.html">
+                <img src="../public/img/logo.svg" alt="Logo" class="logoheader">
+            </a>
+        </div>
+        <div class="headertextconteneur">
+            <a href="/en/index.html">
+                <img src="../public/img/header text.svg" alt="Header text" class="textheader">
+            </a>
+        </div>
+        <div class="headermenuconteneur">
+            <img src="/public/img/menu.svg" alt="menu" aria-controls="mainNav" @click="menuIsOpen = !menuIsOpen"
+                class="headermenu">
+
+            <div id="mainNav" x-show="menuIsOpen" x-transition:duration.600ms class="menu">
+                <nav>
+                    <img src="/public/img/header text.svg" alt="wizards heart" class="menutitle">
+                    <a href="/en/index.html">
+                        <img class="lang" src="/public/img/language.svg" alt="language">
+                    </a>
+                    <img src="/public/img/close.svg" class="close" alt="close" aria-controls="mainNav"
+                        @click="menuIsOpen = !menuIsOpen">
+                    <div class="titres">
+                        <li><a class="menutitre" href="article1.html">The Enchantment of Howl's Moving Castle</a></li>
+                        <hr class="menutrait">
+                        <li><a class="menutitre" href="article2.html">“Here Comes the Fire!”
+                            </a></li>
+                        <hr class="menutrait">
+                        <li><a class="menutitre" href="article3.html">The Enchanted Soundtrack of Howl's Moving
+                                Castle</a>
+                        </li>
+                        <hr class="menutrait">
+                        <li><a class="menutitre" href="article4.html">Mapping a Universe</a></li>
+                        <hr class="menutrait">
+                        <li><a class="menutitre" href="article5.html">A Master of Animation and Imagination</a>
+                        </li>
+                        <hr class="menutrait">
+                        <li><a class="menutitre" href="glossary.html">Glossary</a></li>
+                        <hr class="menutrait">
+                        <li><a class="menutitre" href="filmography.html">Filmography</a></li>
+                        <hr class="menutrait">
+                        <li><a class="menutitre" href="timeline.html">Timeline</a></li>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div x-show="!menuIsOpen">
+        <main>
+            <img src="../public/img/article1img1.jpg" alt="photoarticle1" class="photoarticle1">
+            <h1 class="h1text">The Enchantment of Howl's Moving Castle</h1>
+            <p class="desc">Written by Marina Meloni • 2 min 30 read</p>
+            <h2 class="h2">Howl's Moving Castle, a Timeless Masterpiece</h2>
+            <p class="paragraph"> For those who have explored Hayao Miyazaki's enchanting world of "Howl's Moving
+                Castle," the mere mention of the film brings forth a gentle wave of nostalgia. It's a captivating
+                journey through a realm where <strong>wonder</strong>, <strong>magic</strong>, and <strong>love</strong>
+                harmoniously blend, giving life to a memorable tale.</p>
+            <p class="paragraph">At the heart of this enchanting story lies <strong>Howl</strong>, a charismatic yet
+                troubled wizard, and his own moving castle. Amidst a <strong>conflict</strong> tearing the country
+                apart, the film introduces us to Sophie, a young woman whose life takes an unexpected turn when she
+                crosses paths with Howl and his enigmatic castle.</p>
+            <p class="paragraph">The castle itself is an imaginative masterpiece: a colossal moving contraption that
+                constantly changes shape and location. Its metamorphosis reflects <strong>the mindset</strong> of its
+                owner, Howl, portraying a visual representation of his inner turmoil. This captivating fusion of magic
+                and mechanics illustrates Miyazaki's ability to create visually stunning and profoundly moving worlds.
+            </p>
+            <img src="../public/img/article1img2.jpg" alt="photoarticle1" class="photoarticle">
+            <p class="desc">Photo from the film, Howl's Moving Castle on the hill</p>
+            <h2 class="h2">A Tale of Love and War</h2>
+            <p class="paragraph"> Sophie, condemned to live in the body of an old woman, embarks on a quest to break her
+                curse and encounters <strong>Howl's castle</strong>. She becomes his housekeeper and, through this,
+                forms a unique bond with Howl. The theme of love is skillfully interwoven into the narrative. As the
+                relationship between Sophie and Howl deepens, viewers become aware that love transcends appearances and
+                constitutes a truly powerful force. Throughout the story, we witness the destructive consequences of war
+                and the detrimental effects of using magic as a weapon. Howl's reluctance to get involved in the
+                conflict underscores the film's underlying message about the futility of war and the importance of
+                <strong>personal choices</strong>.</p>
+            <p class="paragraph">Miyazaki's exceptional narrative artistry shines through every frame of Howl's Moving
+                Castle. The film captures the essence of nostalgia, awakening a yearning for a world where magic remains
+                prosperous and where <strong>love triumphs</strong> under all circumstances. It attests to his unique
+                ability to merge fantastical elements with deep human emotions.</p>
+
+            <img src="../public/img/article1img3.jpg" alt="photoarticle1" class="photoarticle">
+            <p class="desc">Photo from the film, Howl and Sophie.</p>
+            <h2 class="h2">A Film that Left its Mark</h2>
+            <p class="paragraph"> In short, "Howl's Moving Castle" is not just a film but an experience etched forever
+                in the hearts of its audience. With its breathtaking animation, memorable characters, and underlying
+                themes of love and war, the film continues to captivate both new enthusiasts and long-time fans.
+                Miyazaki's genius shines brightly in this timeless masterpiece, leaving us nostalgic for the magic that
+                only he can breathe onto the big screen.</p>
+        </main>
+        <div>
+            <a href="article2.html">
+                <p class="paragraph">next article</p>
+                <img src="../public/img/arrow.png" alt="arrow" class="arrow">
+            </a>
+        </div>
+    </div>
+    <footer class="footer">
+        <div>
+            <h1 class="h1footer">Help</h1>
+            <div class="footerlink_conteneur">
+                <p class="footerlink"><a class="footerlink" href="about.html">About</a></p>
+                <p class="footerlink"><a class="footerlink" href="contact.html">Contact</a></p>
+            </div>
+            <img src="/public/img/Instagram white.png" alt="Instagram" class="footerimg">
+            <img src="/public/img/x logo-white.png" alt="Twitter" class="footerimg">
+            <img src="/public/img/logommi.png" alt="MMI Logo" class="footerimgmmi">
+            <p class="footerp">Project carried out as an educational exercise at the MMI Montbéliard department.</p>
+        </div>
+    </footer>
+</body>

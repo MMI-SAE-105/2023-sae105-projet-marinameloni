@@ -1,26 +1,61 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" x-data="{menuIsOpen: false}">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
     <link rel="stylesheet" href="../src/css/style.css">
-    <style>
-        body {
-            margin: 0px;
-        }
-    </style>
+    <script src="https://unpkg.com/alpinejs" defer></script>
 </head>
 
 <body>
-    <header class="header">
-        <div class="headerlogoconteneur">
+<header class="header">
+    <div class="headerlogoconteneur">
+        <a href="/fr/index.html">
             <img src="../public/img/logo.svg" alt="Logo" class="logoheader">
-            <img src="../public/img/header text.svg" alt="Header text">
-            <img src="../public/img/menu.svg" alt="Menu">
+        </a>
+    </div>
+    <div class="headertextconteneur">
+        <a href="/fr/index.html">
+            <img src="../public/img/header text.svg" alt="Header text" class="textheader">
+        </a>
+    </div>
+    <div class="headermenuconteneur">
+        <img src="/public/img/menu.svg" alt="menu" aria-controls="mainNav" @click="menuIsOpen = !menuIsOpen"
+            class="headermenu">
+
+        <div id="mainNav" x-show="menuIsOpen" x-transition:duration.600ms class="menu">
+            <nav>
+                <img src="/public/img/header text.svg" alt="wizards heart" class="menutitle">
+                <a href="/en/index.html">
+                    <img class="lang" src="/public/img/language.svg" alt="language">
+                </a>
+                <img src="/public/img/close.svg" class="close" alt="close" aria-controls="mainNav"
+                    @click="menuIsOpen = !menuIsOpen">
+                <div class="titres">
+                    <li><a class="menutitre" href="article1.html">L'enchantement du Château ambulant</a></li>
+                    <hr class="menutrait">
+                    <li><a class="menutitre" href="article2.html">“Voilà le feu qui cause!”
+                        </a></li>
+                    <hr class="menutrait">
+                    <li><a class="menutitre" href="article3.html">La bande son enchantée du Château Ambulant</a></li>
+                    <hr class="menutrait">
+                    <li><a class="menutitre" href="article4.html">Cartographie d’un univers</a></li>
+                    <hr class="menutrait">
+                    <li><a class="menutitre" href="article5.html">Un maître de l'animation et de l'imagination</a></li>
+                    <hr class="menutrait">
+                    <li><a class="menutitre" href="glossaire.html">Glossaire</a></li>
+                    <hr class="menutrait">
+                    <li><a class="menutitre" href="filmographie.html">Filmographie</a></li>
+                    <hr class="menutrait">
+                    <li><a class="menutitre" href="frise.html">Frise</a></li>
+                </div>
+            </nav>
         </div>
-    </header>
+    </div>
+</header>
+<div
 
 <h2 class="h2">Contact</h2>
 

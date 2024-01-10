@@ -122,10 +122,7 @@ font-weight: 500;
 line-height: normal;
 
 }
-.descfrise__conteneur {
-  
 
-}
 
 .flechefrise {
 width: 49px;
@@ -135,9 +132,6 @@ padding-left: 167px;
 padding-right: 159px
 }
 
-.ligne {
-
-}
 
 .bloc {
   justify-content: center;
@@ -366,8 +360,8 @@ strong {
   color: #20488E;
 }
 .photoarticle1 {
-  width: 375px;
-  height: 231px;
+  width: max-content;
+  height: 235px;
   flex-shrink: 0;
   background: rgba(196, 196, 196, 0.21);
   background-blend-mode: exclusion;

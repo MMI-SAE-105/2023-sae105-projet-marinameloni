@@ -23,102 +23,122 @@
 
             <div id="mainNav" x-show="menuIsOpen" x-transition:duration.600ms class="menu">
                 <nav>
-                    <h1>wizard's heart</h1> <img src="/public/icones/logowhite.png" alt="logo">
-                    <img src="/public/img/close.svg" alt="close" aria-controls="mainNav"
+                    <img src="/public/img/header text.svg" alt="wizards heart" class="menutitle">
+                    <a href="/fr/index.html">
+                        <img class="lang" src="/public/img/language.svg" alt="language">
+                    </a>
+                    <img src="/public/img/close.svg" class="close" alt="close" aria-controls="mainNav"
                         @click="menuIsOpen = !menuIsOpen">
-                    <ul>
-                        <li><a href="article1.html">Unraveling the Enchantment of Howl’s Moving Castle</a></li>
-                        <hr>
-                        <li><a href="article2.html">Quoting Sophie: The Magic Behind 'The Fire's Talking!'
+                    <div class="titres">
+                        <li><a class="menutitre" href="article1.html">Unraveling the Enchantment of the castle</a></li>
+                        <hr class="menutrait">
+                        <li><a class="menutitre" href="article2.html">The Magic Behind 'The Fire's Talking!'
                             </a></li>
-                        <hr>
-                        <li><a href="article3.html">The Enchanting Theme Song of “Howl's Moving Castle”</a></li>
-                        <hr>
-                        <li><a href="article4.html">Charting New Realms: A Universe’s Cartography</a></li>
-                        <hr>
-                        <li><a href="article5.html">Hayao Miyazaki : A Master of Animation and Imagination</a>
+                        <hr class="menutrait">
+                        <li><a class="menutitre" href="article3.html">The Enchanting Theme Song of “Howl's Moving Castle”</a>
                         </li>
-                        <hr>
-                        <li><a href="glossaire.html">Glossaire</a></li>
-                        <hr>
-                        <li><a href="filmographie.html">Filmographie</a></li>
-                        <hr>
-                        <li><a href="frise.html">Frise</a></li>
-                    </ul>
+                        <hr class="menutrait">
+                        <li><a class="menutitre" href="article4.html">Charting New Realms</a></li>
+                        <hr class="menutrait">
+                        <li><a class="menutitre" href="article5.html">A master of Animation and Imagination</a>
+                        </li>
+                        <hr class="menutrait">
+                        <li><a class="menutitre" href="glossaire.html">Glossary</a></li>
+                        <hr class="menutrait">
+                        <li><a class="menutitre" href="filmographie.html">Filmography</a></li>
+                        <hr class="menutrait">
+                        <li><a class="menutitre" href="frise.html">Timeline</a></li>
+                    </div>
                 </nav>
             </div>
         </div>
     </header>
     <main>
-        <img src="../public/img/photo1.webp" alt="Photo page d'accueil" class="photohome">
-        <h2 class="h2">Welcome !</h2>
-        <hr class="trait">
-        <p class="paragraph">Welcome to all Ghibli lovers! Our articles are specially written for fans of the world widely known movie “Howl’s Moving
-        Castle”, offering you a complete immersion into its magical world. If you haven't had the leisure to watch it yet, at
-        least we should give you good reasons to watch it !</p>
-        <h2 class="h2">Read the articles</h2>
-        <hr class="trait">
-        <div class="carrousel" x-data="{hrefCourant: '#ecran-1',}">
-            <div class="carrousel_parent-ecrans" x-ref="parent"
-                @scroll.debounce.250ms.passive="hrefCourant = '#'+ [...$refs.parent.children].find(e=>e.getBoundingClientRect().x>=0).id">
-                <div id="ecran-1" class="carrousel_ecran">
-                    <figure>
-                        <img src="/public/img/article1img1.jpg" alt="image ecran 1" class="carrouselimg">
-                        <figcaption class="carrouseltxt"> <a href="article1.html">Unraveling the Enchantment of Howl’s Moving Castle</a>
-                        </figcaption>
-                    </figure>
+        <div x-show="!menuIsOpen"><img src="../public/img/photo1.jpg" alt="Photo page d'accueil" class="photohome">
+            <div class="texthome__conteneur"><img src="../public/img/header text.svg" alt="Wizards heart"
+                    class="texthome"></div>
+            <div class="espace"></div>
+        </div>
+        <div x-show="!menuIsOpen">
+            <h2 class="h2">Welcome</h2>
+            <svg xmlns="http://www.w3.org/2000/svg" width="118" height="2" viewBox="0 0 118 2" fill="none">
+                <path d="M1 1H117" stroke="#264574" stroke-opacity="0.333333" stroke-linecap="round" />
+            </svg>
+            <p class="paragraph">Welcome to all Ghibli lovers! Our articles are specially written for fans of the world widely known movie “Howl’s Moving
+            Castle”, offering you a complete immersion into its magical world. If you haven't had the leisure to watch it yet, at
+            least we should give you good reasons to watch it !</p>
+            <h2 class="h2">Lire les articles</h2>
+            <svg xmlns="http://www.w3.org/2000/svg" width="118" height="2" viewBox="0 0 118 2" fill="none">
+                <path d="M1 1H117" stroke="#264574" stroke-opacity="0.333333" stroke-linecap="round" />
+            </svg>
+            <div class="carrousel" x-data="{hrefCourant: '#ecran-1',}">
+                <div class="carrousel_parent-ecrans" x-ref="parent"
+                    @scroll.debounce.250ms.passive="hrefCourant = '#'+ [...$refs.parent.children].find(e=>e.getBoundingClientRect().x>=0).id">
+                    <div id="ecran-1" class="carrousel_ecran">
+                        <figure>
+                            <img src="/public/img/article1img1.jpg" alt="image ecran 1" class="carrouselimg">
+                            <figcaption class="carrouseltxt"> <a href="article1.html">Unraveling the Enchantment of Howl’s Moving Castle</a></figcaption>
+                        </figure>
+                    </div>
+                    <div id="ecran-2" class="carrousel_ecran">
+                        <figure>
+                            <img src="/public/img/article2img1.png" alt="image ecran 2" class="carrouselimg">
+                            <figcaption class="carrouseltxt"> <a href="article2.html">Quoting Sophie: The Magic Behind 'The Fire's Talking!'</a></figcaption>
+                        </figure>
+                    </div>
+                    <div id="ecran-3" class="carrousel_ecran">
+                        <figure>
+                            <img src="/public/img/article3.jpg" alt="image ecran 3" class="carrouselimg">
+                            <figcaption class="carrouseltxt"> <a href="article3.html">The Enchanting Theme Song of “Howl's Moving Castle”</a></figcaption>
+                        </figure>
+                    </div>
+                    <div id="ecran-4" class="carrousel_ecran">
+                        <figure>
+                            <img src="/public/img/article4.jpg" alt="image ecran 3" class="carrouselimg">
+                            <figcaption class="carrouseltxt"> <a href="article4.html">Charting New Realms: A Universe’s Cartography</a></figcaption>
+                        </figure>
+                    </div>
+                    <div id="ecran-5" class="carrousel_ecran">
+                        <figure>
+                            <img src="/public/img/article5.jpg" alt="image ecran 5" class="carrouselimg">
+                            <figcaption class="carrouseltxt"> <a href="article5.html">Hayao Miyazaki : A Master of Animation and Imagination</a></figcaption>
+                        </figure>
+                    </div>
                 </div>
-                <div id="ecran-2" class="carrousel_ecran">
-                    <figure>
-                        <img src="/public/img/article2img1.png" alt="image ecran 2" class="carrouselimg">
-                        <figcaption class="carrouseltxt"> <a href="article2.html">Quoting Sophie: The Magic Behind 'The Fire's Talking!'</a></figcaption>
-                    </figure>
-                </div>
-                <div id="ecran-3" class="carrousel_ecran">
-                    <figure>
-                        <img src="/public/img/article3.jpg" alt="image ecran 3" class="carrouselimg">
-                        <figcaption class="carrouseltxt"> <a href="article3.html">the Enchanting Theme Song of “Howl's Moving Castle”</a></figcaption>
-                    </figure>
-                </div>
-                <div id="ecran-4" class="carrousel_ecran">
-                    <figure>
-                        <img src="/public/img/article4.jpg" alt="image ecran 3" class="carrouselimg">
-                        <figcaption class="carrouseltxt"> <a href="article4.html">Charting New Realms: A Universe’s Cartography</a></figcaption>
-                    </figure>
-                </div>
-                <div id="ecran-5" class="carrousel_ecran">
-                    <figure>
-                        <img src="/public/img/article5.jpg" alt="image ecran 5" class="carrouselimg">
-                        <figcaption class="carrouseltxt"> <a href="article5.html">Hayao Miyazaki : A Master of Animation and Imagination</a></figcaption>
-                    </figure>
-                </div>
-            </div>
 
-            <h2 class="h2">Extrait du film</h2>
-            <hr class="trait">
-            <video controls class="video">
-                <source src="../public/video/bandeannonce.mp4" type="video/mp4">
-            </video>
+                <h2 class="h2">Movie trailer</h2>
+                <svg xmlns="http://www.w3.org/2000/svg" width="118" height="2" viewBox="0 0 118 2" fill="none">
+                    <path d="M1 1H117" stroke="#264574" stroke-opacity="0.333333" stroke-linecap="round" />
+                </svg>
+                <video controls class="video">
+                    <source src="../public/video/bandeannonce.mp4" type="video/mp4">
+                </video>
+                <p class="paragraph">In <strong>"Howl's Moving Castle"</strong> by Hayao Miyazaki, Sophie, a young woman transformed into an old woman by a curse, meets Howl, a mysterious magician who lives in a moving castle. She becomes his housekeeper and discovers the secrets of the castle, including its ability to move. </p>
+                <p class="paragraph">The castle is hunted by malevolent forces for its powers. <strong>Sophie and Howl</strong> unite to counter these threats. Their adventure is tinged with magic, colorful characters, and metamorphoses. Throughout the story, Sophie discovers her own inner strength and thwarts the curse that weighed on her.</p>
 
-            <h2 class="h2">Discover other projets</h2>
-            <hr class="trait">
-            <div class="photoprojet_conteneur">
-                <img src="../public/img/projet.jpg" alt="Photo projet" class="photoprojet">
+                <h2 class="h2">Discover other projects</h2>
+                <svg xmlns="http://www.w3.org/2000/svg" width="118" height="2" viewBox="0 0 118 2" fill="none">
+                    <path d="M1 1H117" stroke="#264574" stroke-opacity="0.333333" stroke-linecap="round" />
+                </svg>
+                <div class="photoprojet_conteneur">
+                    <img src="../public/img/projet.jpg" alt="Photo projet" class="photoprojet">
+                </div>
+                <a href="autresprojets.html">
+                    <p class="pprojet">Projects from the C1 group</p>
+                </a>
             </div>
-            <p class="pprojet">Projets from the C1 group</p>
-            <p class="paragraph">This could interest you...</p>
     </main>
     <footer class="footer">
         <div>
-            <h1 class="h1footer">Help</h1>
+            <h1 class="h1footer">Aide</h1>
             <div class="footerlink_conteneur">
-                <p class="footerlink"><a class="footerlink" href="a-propos.html">About</a></p>
+                <p class="footerlink"><a class="footerlink" href="a-propos.html">À propos</a></p>
                 <p class="footerlink"><a class="footerlink" href="contact.html">Contact</a></p>
             </div>
             <img src="/public/img/Instagram white.png" alt="Instagram" class="footerimg">
             <img src="/public/img/x logo-white.png" alt="Twitter" class="footerimg">
             <img src="/public/img/logommi.png" alt="Logo MMI" class="footerimgmmi">
-            <p class="footerp">Project carried out as part of an educational exercise at the MMI Montbéliard department</p>
+            <p class="footerp">Projet réalisé dans le cadre d’un exercice pédagogique au département MMI Montbéliard</p>
         </div>
         </div>
     </footer>
