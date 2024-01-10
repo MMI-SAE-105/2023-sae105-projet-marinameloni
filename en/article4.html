@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en" x-data="{menuIsOpen: false}">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Article</title>
+    <link rel="stylesheet" href="../src/css/style.css">
+    <script src="https://unpkg.com/alpinejs" defer></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="headerlogocontainer">
+            <a href="/en/index.html">
+                <img src="../public/img/logo.svg" alt="Logo" class="logoheader">
+            </a>
+        </div>
+        <div class="headertextcontainer">
+            <a href="/en/index.html">
+                <img src="../public/img/header text.svg" alt="Header text" class="textheader">
+            </a>
+        </div>
+        <div class="headermenucontainer">
+            <img src="/public/img/menu.svg" alt="menu" aria-controls="mainNav" @click="menuIsOpen = !menuIsOpen"
+                class="headermenu">
+
+            <div id="mainNav" x-show="menuIsOpen" x-transition:duration.600ms class="menu">
+                <nav>
+                    <img src="/public/img/header text.svg" alt="wizards heart" class="menutitle">
+                    <a href="/en/index.html">
+                        <img class="lang" src="/public/img/language.svg" alt="language">
+                    </a>
+                    <img src="/public/img/close.svg" class="close" alt="close" aria-controls="mainNav"
+                        @click="menuIsOpen = !menuIsOpen">
+                    <div class="titles">
+                        <li><a class="menutitle" href="article1.html">The Enchantment of Howl's Moving Castle</a></li>
+                        <hr class="menuline">
+                        <li><a class="menutitle" href="article2.html">"Here Comes the Fire!"</a></li>
+                        <hr class="menuline">
+                        <li><a class="menutitle" href="article3.html">The Enchanted Soundtrack of Howl's Moving
+                                Castle</a></li>
+                        <hr class="menuline">
+                        <li><a class="menutitle" href="article4.html">Mapping a Universe</a></li>
+                        <hr class="menuline">
+                        <li><a class="menutitle" href="article5.html">A Master of Animation and Imagination</a></li>
+                        <hr class="menuline">
+                        <li><a class="menutitle" href="glossary.html">Glossary</a></li>
+                        <hr class="menuline">
+                        <li><a class="menutitle" href="filmography.html">Filmography</a></li>
+                        <hr class="menuline">
+                        <li><a class="menutitle" href="timeline.html">Timeline</a></li>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div x-show="!menuIsOpen">
+
+        <img src="../public/img/article4.jpg" alt="photoarticle2" class="photoarticle1">
+        <h1 class="h1text">Mapping a Universe: Discovering New Realms</h1>
+        <p class="desc"> Written by Marina Meloni • 2 min 30 read</p>
+        <h2 class="h2">The World of Howl's Moving Castle</h2>
+        <p class="paragraph"> In the enchanting world of Hayao Miyazaki's "Howl's Moving Castle," the art of cartography
+            takes on a whole new
+            dimension. The film weaves a tapestry of <strong>complex landscapes</strong> and magical places that Howl,
+            the enigmatic sorcerer,
+            traverses with his astonishing abilities. To delve deeper into this cartographic masterpiece, one can turn
+            to the French
+            book <strong>"Hayao Miyazaki: Mapping a Universe,"</strong> which offers profound insights into the
+            complexity of the film's world.
+        </p>
+        <p class="paragraph">
+            At the heart of the story, the moving castle itself, is a symbol of ever-changing landscapes and the dynamic
+            <strong>nature</strong>
+            of the film's setting. This fantastic mobile fortress wanders through lush meadows, bustling markets, and
+            even surreal
+            views of the Desert, reflecting the deep connection between magic and the geography of the world.</p>
+        <p class="paragraph">
+            One of the most remarkable places in the "Howl's Moving Castle" universe is the Marsh, where Howl
+            occasionally goes to
+            escape the bustle of the <strong>outside world</strong>. In this remote and otherworldly marsh, Howl's
+            changing emotions manifest as
+            bizarre and ethereal creatures. The Marsh is a testament to the film's cartography mastery, where geography
+            reflects
+            the inner landscape of its characters.</p>
+        <img src="../public/img/article4img2.webp" alt="photoarticle1" class="photoarticle">
+        <p class="desc">Mapping of Miyazaki's world by Yulya Shironina.</p>
+        <h2 class="h2">The Film's Cartography</h2>
+        <p class="paragraph"> The town of Porte-Aubert, with its bustling streets and vibrant atmosphere, serves as a
+            striking contrast to the
+            desolation of the Desert. This location highlights the film's ability to build a world, with a detailed
+            cartographic
+            representation of a lively urban center.</p>
+        <p class="paragraph">
+            The Desert, a sinister and menacing place, further illustrates the film's complex cartography. Howl's
+            reluctance to
+            engage in the war reflects the bleakness of this region, emphasizing the correlation between geography and
+            character
+            choices. The depiction of the Desert in the film provides a visual depiction of the consequences of
+            conflict.
+        </p>
+        <p class="paragraph">
+            The French book "Hayao Miyazaki: Mapping a Universe" offers valuable insights into Miyazaki's world-building
+            techniques.
+            It highlights the intricate relationships between places and characters, drawing attention to how the
+            landscape affects
+            their choices and evolution throughout the story. The book not only enriches our understanding of the film
+            but also
+            deepens our appreciation of the art of cinematic cartography.</p>
+        <img src="../public/img/article2img3.jpg" alt="photoarticle1" class="photoarticle">
+        <p class="desc">Photo from the film, landscape.</p>
+        <h2 class="h2">A Unique Testimony</h2>
+        <p class="paragraph"> In conclusion, "Howl's Moving Castle" is a testimony to the complex cartography of a
+            magical world, beautifully
+            brought to life by Hayao Miyazaki. This unique blend of magic and geography offers viewers a captivating and
+            immersive
+            experience. The locations in the film's universe, whether the Marsh, Porte-Aubert, or the desolate Desert,
+            are
+            integral to the storytelling, highlighting the relationship between the characters' journeys and the world
+            they
+            inhabit.
+
+            With the help of "Hayao Miyazaki: Mapping a Universe," fans can further explore the depth and complexity of
+            this
+            captivating world and appreciate the art of cinematic cartography in all its splendor.</p>
+
+        <p class="paragraph">next article</p>
+        <img src="../public/img/arrow.png" alt="arrow" class="arrow">
+    </div>
+    <footer class="footer">
+        <div>
+            <h1 class="h1footer">Help</h1>
+            <div class="footerlink_container">
+                <p class="footerlink"><a class="footerlink" href="about.html">About</a></p>
+                <p class="footerlink"><a class="footerlink" href="contact.html">Contact</a></p>
+            </div>
+            <img src="/public/img/Instagram white.png" alt="Instagram" class="footerimg">
+            <img src="/public/img/x logo-white.png" alt="Twitter" class="footerimg">
+            <img src="/public/img/logommi.png" alt="MMI Logo" class="footerimgmmi">
+            <p class="footerp">Project carried out as part of an educational exercise at the MMI Montbéliard department
+            </p>
+        </div>
+        </div>
+    </footer>
+
+</body>
