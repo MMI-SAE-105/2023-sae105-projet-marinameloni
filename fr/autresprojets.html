@@ -1,12 +1,120 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" x-data="{menuIsOpen: false}">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Autres projets</title>
     <link rel="stylesheet" href="../src/css/style.css">
+    <script src="https://unpkg.com/alpinejs" defer></script>
 </head>
+
 <body>
-    
+    <header class="header">
+        <div class="headerlogoconteneur">
+            <img src="../public/img/logo.svg" alt="Logo" class="logoheader">
+        </div>
+        <div class="headertextconteneur">
+            <img src="../public/img/header text.svg" alt="Header text" class="textheader">
+        </div>
+        <div class="headermenuconteneur">
+            <img src="/public/img/menu.svg" alt="menu" aria-controls="mainNav" @click="menuIsOpen = !menuIsOpen"
+                class="headermenu">
+
+            <div id="mainNav" x-show="menuIsOpen" x-transition:duration.600ms class="menu">
+                <nav>
+                    <img src="/public/img/header text.svg" alt="wizards heart" class="menutitle">
+                    <a href="/en/index.html">
+                        <img class="lang" src="/public/img/language.svg" alt="language">
+                    </a>
+                    <img src="/public/img/close.svg" class="close" alt="close" aria-controls="mainNav"
+                        @click="menuIsOpen = !menuIsOpen">
+                    <div class="titres">
+                        <li><a class="menutitre" href="article1.html">L'enchantement du Château ambulant</a></li>
+                        <hr class="menutrait">
+                        <li><a class="menutitre" href="article2.html">“Voilà le feu qui cause!”
+                            </a></li>
+                        <hr class="menutrait">
+                        <li><a class="menutitre" href="article3.html">La bande son enchantée du Château Ambulant</a>
+                        </li>
+                        <hr class="menutrait">
+                        <li><a class="menutitre" href="article4.html">Cartographie d’un univers</a></li>
+                        <hr class="menutrait">
+                        <li><a class="menutitre" href="article5.html">Un maître de l'animation et de l'imagination</a>
+                        </li>
+                        <hr class="menutrait">
+                        <li><a class="menutitre" href="glossaire.html">Glossaire</a></li>
+                        <hr class="menutrait">
+                        <li><a class="menutitre" href="filmographie.html">Filmographie</a></li>
+                        <hr class="menutrait">
+                        <li><a class="menutitre" href="frise.html">Frise</a></li>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div x-show="!menuIsOpen">
+
+        <img src="/public/img/projet.jpg" alt="articlefrise" class="photoarticle">
+        <h1 class="h1text">Autres projets</h1>
+       <p class="paragraph">
+        Découvrez les autres projets des élèves en MMi du groupe C1.</p>
+
+
+
+
+<div class="carrousel" x-data="{hrefCourant: '#ecran-1',}">
+    <div class="carrousel_parent-ecrans" x-ref="parent"
+        @scroll.debounce.250ms.passive="hrefCourant = '#'+ [...$refs.parent.children].find(e=>e.getBoundingClientRect().x>=0).id">
+        <div id="ecran-1" class="carrousel_ecran">
+            <figure>
+                <img src="/public/img/alban.webp" alt="image ecran 1" class="carrouselimg">
+                <figcaption class="carrouseltxt"> <a href="https://clinquant-cascaron-479f70.netlify.app/">Playing the Saw | Alban Chatelet</a>
+                </figcaption>
+            </figure>
+        </div>
+        <div id="ecran-2" class="carrousel_ecran">
+            <figure>
+                <img src="/public/img/ethan.webp" alt="image ecran 2" class="carrouselimg">
+                <figcaption class="carrouseltxt"> <a href="article2.html">Nimbus 2000! | Ethan Touitou</a></figcaption>
+            </figure>
+        </div>
+        <div id="ecran-3" class="carrousel_ecran">
+            <figure>
+                <img src="/public/img/maxime.webp" alt="image ecran 3" class="carrouselimg">
+                <figcaption class="carrouseltxt"> <a href="article3.html">QUOOTE | Maxime De Moura</a></figcaption>
+            </figure>
+        </div>
+        <div id="ecran-4" class="carrousel_ecran">
+            <figure>
+                <img src="/public/img/article4.jpg" alt="image ecran 3" class="carrouselimg">
+                <figcaption class="carrouseltxt"> <a href="grootspeak.remilombard.fr">GrootSpeak | Rémi Lombard</a></figcaption>
+            </figure>
+        </div>
+        <div id="ecran-5" class="carrousel_ecran">
+            <figure>
+                <img src="/public/img/article5.jpg" alt="image ecran 5" class="carrouselimg">
+                <figcaption class="carrouseltxt"> <a href="article5.html">Hayao Miyazaki : Un maître de l'animation et
+                        de l'imagination</a></figcaption>
+            </figure>
+        
+        </div>
+
+
+    </div>
+    <footer class="footer">
+        <div>
+            <h1 class="h1footer">Aide</h1>
+            <div class="footerlink_conteneur">
+                <p class="footerlink"><a class="footerlink" href="a-propos.html">À propos</a></p>
+                <p class="footerlink"><a class="footerlink" href="contact.html">Contact</a></p>
+            </div>
+            <img src="/public/img/Instagram white.png" alt="Instagram" class="footerimg">
+            <img src="/public/img/x logo-white.png" alt="Twitter" class="footerimg">
+            <img src="/public/img/logommi.png" alt="Logo MMI" class="footerimgmmi">
+            <p class="footerp">Projet réalisé dans le cadre d’un exercice pédagogique au département MMI Montbéliard</p>
+        </div>
+        </div>
+    </footer>
+
 </body>
-</html>
