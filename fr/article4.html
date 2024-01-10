@@ -1,57 +1,90 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" x-data="{menuIsOpen: false}">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Article Livre</title>
     <link rel="stylesheet" href="../src/css/style.css">
-    <style>
-        body {
-            margin: 0px;
-        }
-    </style>
+    <script src="https://unpkg.com/alpinejs" defer></script>
 </head>
 
 <body>
-    <header class="header">
-        <div class="headerlogoconteneur">
-            <img src="../public/img/logo.svg" alt="Logo" class="logoheader">
-            <img src="../public/img/header text.svg" alt="Header text">
-            <img src="../public/img/menu.svg" alt="Menu">
+<header class="header">
+    <div class="headerlogoconteneur">
+        <img src="../public/img/logo.svg" alt="Logo" class="logoheader">
+    </div>
+    <div class="headertextconteneur">
+        <img src="../public/img/header text.svg" alt="Header text" class="textheader">
+    </div>
+    <div class="headermenuconteneur">
+        <img src="/public/img/menu.svg" alt="menu" aria-controls="mainNav" @click="menuIsOpen = !menuIsOpen"
+            class="headermenu">
+
+        <div id="mainNav" x-show="menuIsOpen" x-transition:duration.600ms class="menu">
+            <nav>
+                <img src="/public/img/header text.svg" alt="wizards heart" class="menutitle">
+                <a href="/en/index.html">
+                    <img class="lang" src="/public/img/language.svg" alt="language">
+                </a>
+                <img src="/public/img/close.svg" class="close" alt="close" aria-controls="mainNav"
+                    @click="menuIsOpen = !menuIsOpen">
+                <div class="titres">
+                    <li><a class="menutitre" href="article1.html">L'enchantement du Château ambulant</a></li>
+                    <hr class="menutrait">
+                    <li><a class="menutitre" href="article2.html">“Voilà le feu qui cause!”
+                        </a></li>
+                    <hr class="menutrait">
+                    <li><a class="menutitre" href="article3.html">La bande son enchantée du Château Ambulant</a></li>
+                    <hr class="menutrait">
+                    <li><a class="menutitre" href="article4.html">Cartographie d’un univers</a></li>
+                    <hr class="menutrait">
+                    <li><a class="menutitre" href="article5.html">Un maître de l'animation et de l'imagination</a></li>
+                    <hr class="menutrait">
+                    <li><a class="menutitre" href="glossaire.html">Glossaire</a></li>
+                    <hr class="menutrait">
+                    <li><a class="menutitre" href="filmographie.html">Filmographie</a></li>
+                    <hr class="menutrait">
+                    <li><a class="menutitre" href="frise.html">Frise</a></li>
+                </div>
+            </nav>
         </div>
-    </header>
+    </div>
+</header>
+<div x-show="!menuIsOpen">
 
     <img src="../public/img/article4.jpg" alt="photoarticle2" class="photoarticle">
-    <h1>Cartographie d’un univers: découverte de nouveaux royaumes</h1>
+    <h1 class="h1text">Cartographie d’un univers: découverte de nouveaux royaumes</h1>
     <p class="desc"> Rédigé par Marina Meloni • 2 min 30 de lecture</p>
-
+<h2 class="h2">Le monde du Château Ambulant</h2>
     <p class="paragraph"> Dans le monde enchanteur du "Château Ambulant" de Hayao Miyazaki, l'art de la cartographie prend une toute nouvelle
-    dimension. Le film tisse une toile de paysages complexes et de lieux magiques que Howl, l'énigmatique sorcier, traverse
+    dimension. Le film tisse une toile de <strong>paysages complexes</strong> et de lieux magiques que Howl, l'énigmatique sorcier, traverse
     avec ses capacités étonnantes. Pour plonger plus profondément dans ce chef-d'œuvre cartographique, on peut se tourner
-    vers le livre français "Hayao Miyazaki : Cartographie d'un univers", qui offre des aperçus profonds de la complexité du
-    monde du film.
-    
-    Le cœur de l'histoire, le château ambulant lui-même, est un symbole de paysages en perpétuelle évolution et de la nature
+    vers le livre français <strong>"Hayao Miyazaki : Cartographie d'un univers"</strong>, qui offre des aperçus profonds de la complexité du
+    monde du film. </p>
+    <p class="paragraph">
+    Le cœur de l'histoire, le château ambulant lui-même, est un symbole de paysages en perpétuelle évolution et de la <strong>nature</strong>
     dynamique du cadre du film. Cette forteresse mobile fantastique se promène à travers des prairies luxuriantes, des
     marchés animés et même les vues surréalistes du Désert, reflétant le lien profond entre la magie et la géographie du
-    monde.
-    
+    monde.</p>
+    <p class="paragraph">
     L'un des endroits les plus remarquables de l'univers du "Château Ambulant" est le Marécage, où Howl se rend
-    occasionnellement pour échapper à l'agitation du monde extérieur. Dans ce marécage éloigné et surnaturel, les émotions
+    occasionnellement pour échapper à l'agitation du <strong>monde extérieur</strong>. Dans ce marécage éloigné et surnaturel, les émotions
     changeantes de Howl se manifestent sous la forme de créatures bizarres et éthérées. Le Marécage est un témoignage de la
     maîtrise de la cartographie du film, où la géographie reflète le paysage intérieur de ses personnages. </p>
-    <img src="../public/img/article2img2.jpg" alt="photoarticle1" class="photoarticle">
-    <p class="desc">Photo tirée du film, Sophie se rendant sur la montagne.</p>
-
+    <img src="../public/img/article4img2.webp" alt="photoarticle1" class="photoarticle">
+    <p class="desc">Cartographie du monde de Miyazaki par Yulya Shironina.</p>
+<h2 class="h2">La cartographie du film</h2>
     <p class="paragraph"> La ville de Porte-Aubert, avec ses rues animées et son atmosphère vibrante, sert de contraste frappant avec la
     désolation du Désert. Cet endroit met en valeur l'aptitude du film à construire un monde, avec une représentation
-    cartographique détaillée d'un centre urbain animé.
+    cartographique détaillée d'un centre urbain animé.</p>
     
+    <p class="paragraph">
     Le Désert, un endroit sinistre et menaçant, illustre davantage la cartographie complexe du film. La réticence de Howl à
     s'impliquer dans la guerre reflète la sombreté de cette région, soulignant la corrélation entre la géographie et les
     choix des personnages. La représentation du Désert dans le film offre une image visuelle des conséquences du conflit.
-    
+    </p>
+    <p class="paragraph">
     Le livre français "Hayao Miyazaki : Cartographie d'un univers" offre des aperçus précieux des techniques de construction
     du monde de Miyazaki. Il met en lumière les relations complexes entre les lieux et les personnages, attirant l'attention
     sur la manière dont le paysage affecte leurs choix et leur évolution tout au long de l'histoire. Le livre enrichit non
@@ -60,6 +93,7 @@
 
     <img src="../public/img/article2img3.jpg" alt="photoarticle1" class="photoarticle">
     <p class="desc">Photo tirée du film, paysage.</p>
+    <h2 class="h2">Un témoignage unique</h2>
     <p class="paragraph"> En conclusion, "Le Château Ambulant" est un témoignage de la cartographie complexe d'un monde magique, magnifiquement
     mis en vie par Hayao Miyazaki. Ce mélange unique de magie et de géographie offre aux spectateurs une expérience
     captivante et immersive. Les lieux de l'univers du film, que ce soit le Marécage, Porte-Aubert ou le Désert désolé, font
@@ -71,7 +105,7 @@
 
     <p class="paragraph">prochain article</p>
     <img src="../public/img/arrow.png" alt="arrow" class="arrow">
-
+</div>
 <footer class="footer">
 <div>
 <h1 class="h1footer">Aide</h1>

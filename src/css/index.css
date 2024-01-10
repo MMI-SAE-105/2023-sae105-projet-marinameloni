@@ -360,3 +360,8 @@ height: 219px;
   left: 39px;
   z-index: 1;
 }
+
+strong {
+  font-weight: 800;
+  color: #20488E;
+}
