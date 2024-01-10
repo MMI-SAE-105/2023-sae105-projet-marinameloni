@@ -371,3 +371,51 @@ strong {
   filter: brightness(75%);
   padding-top: 50px;
 }
+
+.case {
+  width: 178px;
+  height: 32px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #E6E6E6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.case2 {
+  width: 178px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #E6E6E6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.label {
+  color: rgba(102, 174, 206, 0.65);
+  font-family: 'Baloo 2';
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 138.2%;
+}
+
+.contact_bouton {
+  width: 119px;
+  height: 35px;
+  flex-shrink: 0;
+  background-color: #66AECE;
+  border-radius: 5px;
+  font-family: 'Baloo 2';
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 138.2%;
+  color: #FFF;
+
+}
+.contactpage{
+  padding-top: 70px;
+}

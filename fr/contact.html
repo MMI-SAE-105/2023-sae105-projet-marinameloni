@@ -55,39 +55,51 @@
         </div>
     </div>
 </header>
-<div
+<div x-show="!menuIsOpen">
 
+<div class="contactpage">
 <h2 class="h2">Contact</h2>
 
-    <p>Vous avez une question ? Vous pouvez me contacter !</p>
+    <p class="paragraph">Vous avez une question ? Vous pouvez me contacter !</p>
 
         <div>
-            <label for="nom">Nom</label>
-            <input type="text" id="nom" name="user_name">
+            <label for="nom" class="label">Nom</label>
+            <input type="text" id="nom" name="user_name" class="case">
         </div>
             <div>
-                <label for="nom">Prénom</label>
-                <input type="text" id="nom" name="user_name">
+                <label for="nom" class="label">Prénom</label>
+                <input type="text" id="nom" name="user_name" class="case">
             </div>
         <div>
-            <label for="mail">Adresse mail</label>
-            <input type="email" id="mail" name="user_mail">
+            <label for="mail" class="label">Adresse mail</label>
+            <input type="email" id="mail" name="user_mail" class="case">
         </div>
         <div>
-            <label for="msg">Contenu du message</label>
-            <textarea id="msg" name="user_message"></textarea>
+            <label for="msg" class="label">Contenu du message</label>
+            <textarea id="msg" name="user_message" class="case2" rows="6"></textarea>
         </div>
         <div class="button">
-            <button type="submit"> <a href="mailto:marinameloni.21@gmail.com">Envoyer </a></button>
+            <a href="mailto:marinameloni.21@gmail.com">
+                <button type="submit" class="contact_bouton"> Envoyer 
+            </button></a>
         </div>
+    </div>
+    <div class="contactpage"></div>
 
-    <div class="footer">
-        <h1>Aide</h1>
-        <p><a href="a-propos.html">À propos</a></p>
-        <p><a href="contact.html">Contact</a></p>
-        <img src="/public/img/insta.svg" alt="Instagram">
-        <img src="/public/img/X.svg" alt="Twitter">
-        <img src="/public/img/logommi.png" alt="Logo MMI">
+<footer class="footer">
+    <div>
+        <h1 class="h1footer">Aide</h1>
+        <div class="footerlink_conteneur">
+            <p class="footerlink"><a class="footerlink" href="a-propos.html">À propos</a></p>
+            <p class="footerlink"><a class="footerlink" href="contact.html">Contact</a></p>
+        </div>
+        <img src="/public/img/Instagram white.png" alt="Instagram" class="footerimg">
+        <img src="/public/img/x logo-white.png" alt="Twitter" class="footerimg">
+        <img src="/public/img/logommi.png" alt="Logo MMI" class="footerimgmmi">
+        <p class="footerp">Projet réalisé dans le cadre d’un exercice pédagogique au département MMI Montbéliard</p>
+    </div>
     </div>
 
+</footer>
+</div>
 </body>
